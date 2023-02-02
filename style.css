@@ -8,7 +8,7 @@ body{
     margin-top: 1rem;
 }
 .content{
-    height: 100vh;
+    height: 50vh;
 }
 img{
     height: 100%;
@@ -16,4 +16,13 @@ img{
 }
 a,ul{
     text-decoration: none;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+input{
+    width: 100%;
 }
