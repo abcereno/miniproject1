@@ -1,5 +1,6 @@
 body{
     background: linear-gradient(#012A60 100%, #012A60 25%, #012A60 75%, #012A60 100%);
+    min-height: 100vh;
 }
 .container{
     color: white;
@@ -17,12 +18,13 @@ img{
 a,ul{
     text-decoration: none;
 }
-.button{
+input,button{
+    width: 100%;
+    border-radius: 25px;
+    padding: 10px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: 1rem;
 }
-input{
-    width: 100%;
+p{
+    font-size: 2rem;
 }
