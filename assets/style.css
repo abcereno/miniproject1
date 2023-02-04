@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     background: linear-gradient(#012A60 100%, #012A60 25%, #012A60 75%, #012A60 100%);
     min-height: 100vh;
@@ -17,6 +20,7 @@ img{
 }
 a,ul{
     text-decoration: none;
+    color: white;
 }
 input,button{
     width: 100%;
@@ -27,4 +31,8 @@ input,button{
 }
 p{
     font-size: 2rem;
+}
+#addImg{
+    height: 50%;
+    width: 100%;
 }
