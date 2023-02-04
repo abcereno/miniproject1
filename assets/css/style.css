@@ -1,0 +1,76 @@
+*{
+    font-style: Inter;
+}html{
+    scroll-behavior: smooth;
+}
+body{
+    background: linear-gradient(#012A60 100%, #012A60 25%, #012A60 75%, #012A60 100%);
+    min-height: 100vh;
+}
+.container{
+    color: white;
+}
+.row{
+    margin-top: 1rem;
+}
+.content{
+    height: 50vh;
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+a,ul{
+    text-decoration: none;
+    color: white;
+}
+input,button{
+    width: 100%;
+    border-radius: 25px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+p{
+    font-size: 2rem;
+}
+#addImg{
+    height: 50%;
+    width: 100%;
+}
+ul,li{
+    list-style: none;
+}
+ul li{
+    display: inline-block;
+    position: relative;
+}
+ul li a{
+    display: block;
+    padding: 20px 25px;
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+}
+ul li ul.dropdown li{
+    display: block;
+}
+ul li ul.dropdown{
+    width: 100%;
+    background: #22438C;
+    position: absolute;
+    z-index: 5;
+    display: none;
+}
+ul li a:hover{
+    background: #112431;
+}
+ul li:hover ul.dropdown{
+    display: block;
+}
+#userpic{
+    height: 40px;
+    width:40px;
+    border-radius: 50%;
+    border: solid 2px #FAD550;
+}

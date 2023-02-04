@@ -3,6 +3,36 @@
     margin: 0px;
     outline: 1px red dotted;
 }
+ul,li{
+    list-style: none;
+}
+ul li{
+    display: inline-block;
+    position: relative;
+}
+ul li a{
+    display: block;
+    padding: 20px 25px;
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+}
+ul li ul.dropdown li{
+    display: block;
+}
+ul li ul.dropdown{
+    width: 100%;
+    background: #22438C;
+    position: absolute;
+    z-index: 5;
+    display: none;
+}
+ul li a:hover{
+    background: #112431;
+}
+ul li:hover ul.dropdown{
+    display: block;
+}
 #header{
     border-bottom: 2px groove gray;
     box-shadow: inset;
