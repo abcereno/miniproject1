@@ -7,6 +7,17 @@ body{
     background: linear-gradient(#012A60 100%, #012A60 25%, #012A60 75%, #012A60 100%);
     min-height: 100vh;
 }
+.introduction{
+    height: 100vh;
+    background: #3067A5;
+}
+h1{
+    font-size: 5rem;
+}
+h6{
+    font-style: italic;
+    font-size: 2rem;
+}
 .container{
     color: white;
 }
