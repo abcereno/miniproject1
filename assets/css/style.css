@@ -5,10 +5,10 @@
 }
 body{
     background: linear-gradient(#012A60 100%, #012A60 25%, #012A60 75%, #012A60 100%);
-    min-height: 100vh;
+    width: 100%;
 }
 .introduction{
-    height: 100vh;
+    height: 86vh;
     background: #3067A5;
 }
 h1{
