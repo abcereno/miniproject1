@@ -43,10 +43,28 @@
                 <br>
                 <textarea class="col-12" name="" id="" cols="30" rows="10" placeholder="Enter your concerns here..."></textarea>
                 <input class="col-1 d-inline-block" type="checkbox" id="checkbox1">Subscribe to newsletter
-                <button class="bg-success w-50 m-auto mt-3 mb-3 d-flex justify-content-center">Send</button>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary col-2 bg-success bg-success w-50 m-auto mt-3 mb-3 d-flex justify-content-center">Send</button>
             </div>
         </div>
     </div>
+    <!-- ----------------- -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title fs-5" id="exampleModalLabel">Maintenance!</h3>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h3>Coming Soon!</h3>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
     <footer class="container">
         <div class="row d-flex justify-content-center">
             2023 copyright | Terms and Conditions | Privacy policy
