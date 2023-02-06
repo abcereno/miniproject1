@@ -10,43 +10,40 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
 </head>
 <body>
-    <header>
-        <div class="container-md">
-            <div id="header" class="row">
-                <div class="col-4 d-flex justify-content-center align-items-center">
-                    <a href="../index.html"><img src="../assets/imgs/logo.png" alt="" id="logo" class="mt-2 me-4"></a>
-                </div>
-                <div class="col-3 d-flex justify-content-center align-items-center">
-                    <input placeholder="Search" type="text">
-                </div>
-                <div class="col-5 text-center m-auto text-white fw-bold d-flex align-items-center justify-content-evenly">
-                    <img class="" src="../assets/imgs/store.png" alt="" id="userpic">
-                    <ul class="m-0 p-0 d-inline-block">
-                        <li><img class="" src="../assets/imgs/bell icon.png" alt="" id="userpic">
-                            <ul class="dropdown p-0">
-                                <li class="d-flex justify-content-center"><a href="#">None</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <nan id="storeName">
-                        <ul class="m-0 p-0 d-inline-block">
-                            <li><a href="Store.html" class="ps-1 pe-1">STORE NAME ▾</a>
-                                <ul class="dropdown p-0">
-                                    <li><a href="addproduct.html">Add Product</a></li>
-                                    <li><a href="orders.html">Orders</a></li>
-                                    <li><a href="Staffs.html">Staffs</a></li>
-                                    <li><a href="suppliers.html">Suppliers</a></li>
-                                    <li><a href="Settings.html">Settings</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+    <header id="home" class="container-fluid mb-4 header">
+        <div class="row">
+            <div class="col-lg col-md-12 d-flex justify-content-center align-items-center p-3">
+                <a href="../index.html"><img class="logo" src="../assets/imgs/logo.png" alt=""></a>
             </div>
-        </div>
+            <div class="col-lg d-flex justify-content-center align-items-center">
+                <input placeholder="Search here...">
+            </div>
+            <div class="col-lg d-flex justify-content-evenly align-items-center">
+                <img class="" src="../assets/imgs/store.png" alt="" id="userpic">
+                <ul class="m-0 p-0 d-inline-block">
+                    <li>
+                        <img class="" src="../assets/imgs/bell icon.png" alt="" id="userpic">
+                        <ul class="dropdown p-0">
+                            <li class="d-flex justify-content-center"><a href="#">None</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="m-0 p-0 d-inline-block">
+                    <li><a href="store.html" class="ps-1 pe-1">STORE NAME ▾</a>
+                        <ul class="dropdown p-0">
+                            <li><a href="addproduct.html">Add Product</a></li>
+                            <li><a href="orders.html">Orders</a></li>
+                            <li><a href="Staffs.html">Staffs</a></li>
+                            <li><a href="suppliers.html">Suppliers</a></li>
+                            <li><a href="Settings.html">Settings</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>       
     </header>
     <hr>
-    <div class="container justify-content-center w-50">
+    <div class="container content p-5 justify-content-center w-50">
         <h2 class="row justify-content-center m-auto">Account Info</h2>
         <div class="row">
             <label for="">Owner's Name:</label>
@@ -64,10 +61,11 @@
             <label for="">Company Address:</label>
             <textarea name="" id="" cols="30" rows="10"></textarea>
         </div>
-        <div class="row d-flex justify-content-center">
-            <button class="col-2">Save</button>
+        <div class="row d-flex justify-content-evenly mt-4 mb-2">
+            <button class="col-2 bg-success">Save</button>
             <button class="col-2">Cancel</button>
         </div>
+    </div>
     <footer class="container">
         <div class="row d-flex justify-content-center">
             2023 copyright | Terms and Conditions | Privacy policy

@@ -1,34 +1,49 @@
-*{
-    font-style: Inter;
-}html{
+html{
     scroll-behavior: smooth;
 }
 body{
     background: linear-gradient(#012A60 100%, #012A60 25%, #012A60 75%, #012A60 100%);
-    width: 100%;
+    overflow-x: hidden;
 }
 .introduction{
     height: 86vh;
+    background: url(../imgs/Small-Business-Self-Storage.jpg);
+}
+#stonks{
+    background: url(../imgs/stonks.jpg);
+    background-size: cover;
+}
+.introduction .row{
     background: #3067A5;
 }
-h1{
-    font-size: 5rem;
+.content h1,.introduction .row h1{
+    font-size: 3rem;
+    color: #FAD550;
+    text-shadow: 2px 2px 2px #000000; 
 }
-h6{
-    font-style: italic;
+.introduction .row h6{
+    font-style: oblique;
     font-size: 2rem;
+    color: #FFF;
+    text-shadow: 2px 2px 2px #000000;
 }
-.container{
+.container, footer{
     color: white;
 }
-.row{
+.header,.content{
     margin-top: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .content{
-    height: 50vh;
+    height: fit-content;
 }
-img{
+.logo{
+    width: 100%;
     height: 100%;
+    border-radius: 35px;
+}
+.content img,.content h1{
+    height: 50vh;
     width: 100%;
 }
 a,ul{
@@ -48,6 +63,9 @@ p{
 #addImg{
     height: 50%;
     width: 100%;
+}
+li{
+    padding: 0 !important;
 }
 ul,li{
     list-style: none;

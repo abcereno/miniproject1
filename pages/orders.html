@@ -10,70 +10,71 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
 </head>
 <body>
-    <header>
-        <div class="container-md">
-            <div id="header" class="row">
-                <div class="col-4 d-flex justify-content-center align-items-center">
-                    <a href="../index.html"><img src="../assets/imgs/logo.png" alt="" id="logo" class="mt-2 me-4"></a>
-                </div>
-                <div class="col-3 d-flex justify-content-center align-items-center">
-                    <input placeholder="Search" type="text">
-                </div>
-                <div class="col-5 text-center m-auto text-white fw-bold d-flex align-items-center justify-content-evenly">
-                    <img class="" src="../assets/imgs/store.png" alt="" id="userpic">
-                    <ul class="m-0 p-0 d-inline-block">
-                        <li><img class="" src="../assets/imgs/bell icon.png" alt="" id="userpic">
-                            <ul class="dropdown p-0">
-                                <li class="d-flex justify-content-center"><a href="#">None</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <nan id="storeName">
-                        <ul class="m-0 p-0 d-inline-block">
-                            <li><a href="Store.html" class="ps-1 pe-1">STORE NAME ▾</a>
-                                <ul class="dropdown p-0">
-                                    <li><a href="addproduct.html">Add Product</a></li>
-                                    <li><a href="orders.html">Orders</a></li>
-                                    <li><a href="Staffs.html">Staffs</a></li>
-                                    <li><a href="suppliers.html">Suppliers</a></li>
-                                    <li><a href="Settings.html">Settings</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+    <header id="home" class="container-fluid mb-4 header">
+        <div class="row">
+            <div class="col-lg col-md-12 d-flex justify-content-center align-items-center p-3">
+                <a href="../index.html"><img class="logo" src="../assets/imgs/logo.png" alt=""></a>
             </div>
-        </div>
+            <div class="col-lg d-flex justify-content-center align-items-center">
+                <input placeholder="Search here...">
+            </div>
+            <div class="col-lg d-flex justify-content-evenly align-items-center">
+                <img class="" src="../assets/imgs/store.png" alt="" id="userpic">
+                <ul class="m-0 p-0 d-inline-block">
+                    <li>
+                        <img class="" src="../assets/imgs/bell icon.png" alt="" id="userpic">
+                        <ul class="dropdown p-0">
+                            <li class="d-flex justify-content-center"><a href="#">None</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="m-0 p-0 d-inline-block">
+                    <li><a href="store.html" class="ps-1 pe-1">STORE NAME ▾</a>
+                        <ul class="dropdown p-0">
+                            <li><a href="addproduct.html">Add Product</a></li>
+                            <li><a href="orders.html">Orders</a></li>
+                            <li><a href="Staffs.html">Staffs</a></li>
+                            <li><a href="suppliers.html">Suppliers</a></li>
+                            <li><a href="Settings.html">Settings</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>       
     </header>
     <hr>
-    <div class="container justify-content-center">
-            <h2 class="row justify-content-center m-auto">Orders IN/OUT</h2>
+    <div class="container content p-5 justify-content-center">
+            <h2 class="row justify-content-center m-auto mb-4">Orders IN/OUT</h2>
             <div class="row d-flex">
                 <h4 class="col-4 d-flex justify-content-center">Product:</h4><h4 class="col-4 d-flex justify-content-center">IN/OUT:</h4><h4 class="col-4 d-flex justify-content-center">Name:</h4>
             </div>
-            <div class="d-flex justify-content-evenly">
+            <div class="d-flex justify-content-evenly mt-1 mb-1">
                 <input class="col-4 w-25" type="text">
                 <input class="col-4 w-25" type="text">
                 <h6 class="d-flex align-items-center">To</h6>
                 <input class="col-4 w-25" type="text">
             </div>
-            <div class="d-flex justify-content-evenly">
+            <div class="d-flex justify-content-evenly mt-1 mb-1">
                 <input class="col-4 w-25" type="text">
                 <input class="col-4 w-25" type="text">
                 <h6 class="d-flex align-items-center">To</h6>
                 <input class="col-4 w-25" type="text">
             </div>
-            <div class="d-flex justify-content-evenly">
+            <div class="d-flex justify-content-evenly mt-1 mb-1">
                 <input class="col-4 w-25" type="text">
                 <input class="col-4 w-25" type="text">
                 <h6 class="d-flex align-items-center">To</h6>
                 <input class="col-4 w-25" type="text">
             </div>
-            <div class="d-flex justify-content-evenly">
+            <div class="d-flex justify-content-evenly mt-1 mb-1">
                 <input class="col-4 w-25" type="text">
                 <input class="col-4 w-25" type="text">
                 <h6 class="d-flex align-items-center">To</h6>
                 <input class="col-4 w-25" type="text">
+            </div>
+            <div class="row d-flex justify-content-evenly mt-4 mb-2">
+                <button class="col-2 bg-success">Save</button>
+                <button class="col-2">Cancel</button>
             </div>
     </div>
     <footer class="container">

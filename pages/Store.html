@@ -4,57 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <link href="../assets/css/Store.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet"  type="text/css" href="../assets/css/normalize.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <script src="../assets/js/bootstrap.bundle.js"></script>
+    <link href="../assets/css/style.css" rel="stylesheet" type="text/css">
     <title>Inventory Management System</title>
 </head>
 <body>
-    <header>
-        <div class="container-md">
-            <div id="header" class="row">
-                <div class="col-4 d-flex justify-content-center align-items-center">
-                    <a href="../index.html"><img src="../assets/imgs/logo.png" alt="" id="logo" class="mt-2 me-4"></a>
-                </div>
-                <div class="col-3 d-flex justify-content-center align-items-center">
-                    <input placeholder="Search" type="text">
-                </div>
-                <div class="col-5 text-center m-auto text-white fw-bold d-flex align-items-center justify-content-evenly">
-                    <img class="" src="../assets/imgs/store.png" alt="" id="userpic">
-                    <ul class="m-0 p-0 d-inline-block">
-                        <li><img class="" src="../assets/imgs/bell icon.png" alt="" id="userpic">
-                            <ul class="dropdown p-0">
-                                <li class="d-flex justify-content-center"><a href="#">None</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <nan id="storeName">
-                        <ul class="m-0 p-0 d-inline-block">
-                            <li><a href="Store.html" class="ps-1 pe-1">STORE NAME ▾</a>
-                                <ul class="dropdown p-0">
-                                    <li><a href="addproduct.html">Add Product</a></li>
-                                    <li><a href="orders.html">Orders</a></li>
-                                    <li><a href="Staffs.html">Staffs</a></li>
-                                    <li><a href="suppliers.html">Suppliers</a></li>
-                                    <li><a href="Settings.html">Settings</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
-    <div class="container-md">
+    <header id="home" class="container-fluid mb-4 header">
         <div class="row">
-            <div id="igraph"class="col-md-6 mt-5 mb-4 m-auto">
-                <h1  class="text-white mt-5">INVENTORY <br>GRAPH</h1>
+            <div class="col-lg col-md-12 d-flex justify-content-center align-items-center p-3">
+                <a href="../index.html"><img class="logo" src="../assets/imgs/logo.png" alt=""></a>
             </div>
+            <div class="col-lg d-flex justify-content-center align-items-center">
+                <input placeholder="Search here...">
+            </div>
+            <div class="col-lg d-flex justify-content-evenly align-items-center">
+                <img class="" src="../assets/imgs/store.png" alt="" id="userpic">
+                <ul class="m-0 p-0 d-inline-block">
+                    <li>
+                        <img class="" src="../assets/imgs/bell icon.png" alt="" id="userpic">
+                        <ul class="dropdown p-0">
+                            <li class="d-flex justify-content-center"><a href="#">None</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="m-0 p-0 d-inline-block">
+                    <li><a href="store.html" class="ps-1 pe-1">STORE NAME ▾</a>
+                        <ul class="dropdown p-0">
+                            <li><a href="addproduct.html">Add Product</a></li>
+                            <li><a href="orders.html">Orders</a></li>
+                            <li><a href="Staffs.html">Staffs</a></li>
+                            <li><a href="suppliers.html">Suppliers</a></li>
+                            <li><a href="Settings.html">Settings</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>       
+    </header>
+    <div class="container-fluid content p-5 d-flex justify-content-center align-items-center">
+        <div class="row">
+            <h1 class="col-12 d-flex justify-content-center h-auto">Inventory Graph</h1>
+            <img src="../assets/imgs/pigraph.jpg" alt="">
         </div>
-        <div class="row mb-5 justify-content-center"> 
-            <div class="col-md-10">
-                <div class="d-inline-block tg mb-2 ms-2" style="background-image: url('../assets/imgs/bgs.png');">
+    </div>
+    <div class="container-fluid content">
+        <div class="row content d-flex justify-content-evenly p-5"> 
+                <div class="col-lg-2 col-md-4 bg-success">
                     <P class="text-center text-white">TOP<BR>GROSSING</P>          
                     <div class="box bg-white m-auto mb-1">
                         <div class="col-md-3 h-100 border-end text-center fw-bold fs-4">#1</div>
@@ -72,7 +68,7 @@
                         <div class="col-md-3 h-100 border-end text-center fw-bold fs-4">#5</div>
                     </div>
                 </div>                    
-                <div class="d-inline-block tg mb-2 ms-2" style="background-image: url('../assets/imgs/bgs.png');">
+                <div class="col-lg-2 col-md-4 bg-success">
                     <P class="text-center text-white">TOP<BR>PEFORMING</P>          
                     <div class="box bg-white m-auto mb-1">
                         <div class="col-md-3 h-100 border-end text-center fw-bold fs-4">#1</div>
@@ -90,7 +86,7 @@
                         <div class="col-md-3 h-100 border-end text-center fw-bold fs-4">#5</div>
                     </div>
                 </div>                    
-                <div class="d-inline-block tg mb-2 ms-2" style="background-image: url('../assets/imgs/bgs.png');">
+                <div class="col-lg-2 col-md-4 bg-success">
                     <P class="text-center text-white">FAST<BR>MOVING</P> 
                     <div class="box bg-white m-auto mb-1">
                         <div class="col-md-3 h-100 border-end text-center fw-bold fs-4">#1</div>
@@ -108,10 +104,10 @@
                         <div class="col-md-3 h-100 border-end text-center fw-bold fs-4">#5</div>
                     </div>         
                 </div>                    
-                <div class="d-inline-block tg mb-2 ms-2" style="background-image: url('../assets/imgs/bgs.png');">
+                <div class="col-lg-2 col-md-4 bg-secondary">
                     <P class="text-center text-white">SLOW<BR>MOVING</P>
                     <div class="box bg-white m-auto mb-1">
-                        <div class="col-md-3 h-100 border-end caution"></div>
+                        <div class="col-md-3 h-100 border-end text-center fw-bold fs-4">#1</div>
                     </div>
                     <div class="box bg-white m-auto mb-1">
                         <div class="col-md-3 h-100 border-end text-center fw-bold fs-4">#2</div>
@@ -126,10 +122,10 @@
                         <div class="col-md-3 h-100 border-end text-center fw-bold fs-4">#5</div>
                     </div>          
                 </div>                    
-                <div class="d-inline-block tg mb-2 ms-2"  style="background-image: url('../assets/imgs/bgs.png');">
-                    <P class=" text-center text-white"id="expiry">EXPIRING</P> 
+                <div class="col-lg-2 col-md-4 bg-danger">
+                    <P class=" text-center text-white"id="expiry"><br>EXPIRING<br></P> 
                     <div class="box bg-white m-auto mb-1">
-                        <div class="col-md-3 h-100 border-end caution"></div>
+                        <div class="col-md-3 h-100 border-end text-center fw-bold fs-4">#1</div>
                     </div>
                     <div class="box bg-white m-auto mb-1">
                         <div class="col-md-3 h-100 border-end text-center fw-bold fs-4">#2</div>
@@ -144,44 +140,26 @@
                         <div class="col-md-3 h-100 border-end text-center fw-bold fs-4">#5</div>
                     </div>         
                 </div>  
-                <div class="bottom"></div>                  
-            </div>  
+                <div class="bottom"></div>                    
         </div>
-        <div class="row mb-5">
-            <div class="col-md-8 offset-2">
-                <div class="row">
-                    <div class="col-md-6 offset-">
-                        <div id="mustHave" class="col-6">
-                            <div id="insideMH" class="bg-light"></div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <h1 class="text-white fw-bold text-center" id="mhp">MUST HAVE<br> ITEM</h1>
-                    </div>                  
-                </div>
-                
+    </div>
+    <div class="container-fluid content p-5 d-flex justify-content-evenly align-items-center">
+        <div class="row pb-5">
+            <div class="col-lg col-md-12">
+                <h2 class="text-white fw-bold text-center d-flex justify-content-center" id="mhp">MUST HAVES</h2>
+                <img src="" alt="">
             </div>
-        </div>
-        <div class="row mb-5">
-            <div class="col-md-8 offset-2">
-                <div class="row">
-                    <div id="mhp" class="col-md-6">
-                        <h1 class="text-white fw-bold text-center">TOP<br>SEARCHED</h1>
-                    </div>
-                    <div class="col-md-6">
-                        <div id="topS" class="col-6">
-                            <div id="insideTS" class="bg-light"></div>
-                        </div>
-                    </div>  
-                </div>
+            <div id="mhp" class="col-lg col-md-12">
+                <h2 class="text-white fw-bold text-center text-truncate d-flex justify-content-center">TOP SEARCHED</h2>
+                <img src="" alt="">
             </div>
         </div>
     </div>
-    <div id="footer" class="row">
-        <div class="col-md-12 text-center">
-            <p class="text-white">2023 copyright | Terms and Conditions | Privacy policy</p>
+    <footer class="container-fluid">
+        <div class="row d-flex justify-content-center">
+            2023 copyright | Terms and Conditions | Privacy policy
         </div>
-    </div>                    
+    </footer>                    
 </body>
 </html>
 
