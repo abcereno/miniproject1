@@ -74,6 +74,13 @@ P{
     grid-template-columns: repeat(auto-fit,minmax(10rem,20rem));
     justify-content: center;
 }
+body{
+    /* background: rgb(1,42,96); 
+background: -moz-linear-gradient(315deg, rgba(1,42,96,1) 0%, rgba(1,42,96,1) 6%, rgba(250,213,80,1) 6%, rgba(250,213,80,1) 9%, rgba(0,203,44,1) 9%, rgba(0,203,44,1) 12%, rgba(116,157,237,1) 12%, rgba(116,157,237,1) 15%, rgba(48,103,165,1) 15%, rgba(48,103,165,1) 18%, rgba(1,42,96,1) 18%, rgba(1,42,96,1) 85%, rgba(48,103,165,1) 85%, rgba(48,103,165,1) 88%, rgba(116,157,237,1) 88%, rgba(116,157,237,1) 91%, rgba(0,203,44,1) 91%, rgba(0,203,44,1) 94%, rgba(250,213,80,1) 94%, rgba(250,213,80,1) 97%, rgba(1,42,96,1) 97%, rgba(1,42,96,1) 100%, rgba(48,103,165,1) 100%);
+background: -webkit-linear-gradient(315deg, rgba(1,42,96,1) 0%, rgba(1,42,96,1) 6%, rgba(250,213,80,1) 6%, rgba(250,213,80,1) 9%, rgba(0,203,44,1) 9%, rgba(0,203,44,1) 12%, rgba(116,157,237,1) 12%, rgba(116,157,237,1) 15%, rgba(48,103,165,1) 15%, rgba(48,103,165,1) 18%, rgba(1,42,96,1) 18%, rgba(1,42,96,1) 85%, rgba(48,103,165,1) 85%, rgba(48,103,165,1) 88%, rgba(116,157,237,1) 88%, rgba(116,157,237,1) 91%, rgba(0,203,44,1) 91%, rgba(0,203,44,1) 94%, rgba(250,213,80,1) 94%, rgba(250,213,80,1) 97%, rgba(1,42,96,1) 97%, rgba(1,42,96,1) 100%, rgba(48,103,165,1) 100%);
+background: linear-gradient(315deg, rgba(1,42,96,1) 0%, rgba(1,42,96,1) 6%, rgba(250,213,80,1) 6%, rgba(250,213,80,1) 9%, rgba(0,203,44,1) 9%, rgba(0,203,44,1) 12%, rgba(116,157,237,1) 12%, rgba(116,157,237,1) 15%, rgba(48,103,165,1) 15%, rgba(48,103,165,1) 18%, rgba(1,42,96,1) 18%, rgba(1,42,96,1) 85%, rgba(48,103,165,1) 85%, rgba(48,103,165,1) 88%, rgba(116,157,237,1) 88%, rgba(116,157,237,1) 91%, rgba(0,203,44,1) 91%, rgba(0,203,44,1) 94%, rgba(250,213,80,1) 94%, rgba(250,213,80,1) 97%, rgba(1,42,96,1) 97%, rgba(1,42,96,1) 100%, rgba(48,103,165,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#012a60",endColorstr="#3067a5",GradientType=1);*/
+}
 #bglogin{
     background-color:#00C82C ;
     border: 0px;
@@ -91,7 +98,6 @@ P{
 }
 .container{
     position: relative;
-    
     margin: 0.5rem;
 }
 ul,li{
@@ -117,6 +123,11 @@ ul li ul.dropdown{
 }
 ul li:hover ul.dropdown{
     display: block;
+}
+.bgs{
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
 }
 
 
