@@ -137,6 +137,19 @@ h3{
     min-height: 460px;
     max-height: 460px;
 }
+.getnot{
+    background-color: #272f56;
+}
+#getnotif{
+    height:250px;
+    min-width: 450px;
+    max-width:450px;
+}
+.emp{
+    height:300px;
+    min-width: 450px;
+    max-width:450px;
+}
 
 
 @media (min-width: 400px) and (max-width: 1400px) {
