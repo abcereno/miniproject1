@@ -4,98 +4,184 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mini Project 1</title>
+    <title>IMS-Home</title>
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <script src="assets/js/bootstrap.bundle.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-    <header id="home" class="container-fluid mb-4 header">
+   <header id="home" class="container-fluid mb-4 header"> 
         <div class="row">
             <div class="col-lg col-md-12 d-flex justify-content-center align-items-center p-3">
-                <a href="index.html"><img class="logo" src="assets/imgs/logo.png" alt=""></a>
+                <a href="index.html"><img class="logo lessradius" src="assets/imgs/logo.png" class="logo" alt=""></a>
             </div>
-            <div class="col-lg d-flex justify-content-center align-items-center">
+            <div class="col-lg d-flex justify-content-center align-items-center ">
                 <input placeholder="Search here...">
             </div>
             <div class="col-lg d-flex justify-content-center align-items-center">
-                <ul class="p-0">
-                    <li><a href="pages/contact.html">Contact Us</a></li>
-                    <li><a href="pages/signup.html">Sign-up</a></li>
+                <ul class="p-0 m-0">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pages/signup.html">Sign-Up</a></li>
                     <li><a href="pages/login.html">Login</a></li>
                 </ul>
             </div>
         </div>
-    </header>
-<div id="container1">
-<div id="header">
-    <div class="container-fluid introduction d-flex justify-content-center align-items-center">
-        <div class="row bg-transparent">
-            <h1 class="col-12 d-flex justify-content-center p-5 title">INVENTORY MANAGEMENT</h1>
-            <h6 class="col d-flex justify-content-center ps-5 pe-5 title">"Your Business Partner To Success"</h6> 
-        </div>
-    </div>
-</div>
-<section>
+    </header>  
     <div class="container-fluid">
-        <div class="row content">
-            <div class="col-md content m-0">
-                <img src="assets/imgs/Alert.png" alt="">
-            </div>
-            <div class="col-md d-flex justify-content-center align-items-center">
-                <h1 class="d-flex justify-content-center align-items-center ps-5 pe-5" id="alert">Get Notified!</h1>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row content">
-            <div class="col-md d-flex justify-content-center align-items-center">
-                <h1 class="d-flex justify-content-center align-items-center ps-5 pe-5">Easy To Manage Products</h1>
-            </div>
-            <div class="col-md content m-0">
-                <img src="assets/imgs/addproduct.png" alt="">
+        <div class="row">
+            <div class="col-10 justify-content-center m-auto pb-5">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="assets/imgs/pic1.png" class="d-block w-100 pic1" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/imgs/pic2.png" class="d-block w-100 pic2" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
             </div>
         </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row content">
-            <div class="col-md content m-0">
-                <img src="assets/imgs/alert1.png" alt="">
-            </div>
-            <div class="col-md d-flex justify-content-center align-items-center">
-                <h1 class="d-flex justify-content-center align-items-center ps-5 pe-5">Alert for Low on Stocks!</h1>
+    </div> 
+    <div class="container-fluid m-auto bg-white pt-5" >
+        <div class="row mb-5" >
+            <div class="col-10 m-auto pb-4 pe-4 ps-4" id="loginbox">
+                <div class="row">
+                    <div class="col-md-6 offset getnot text-white m-0 p-0">
+                        <div class="container p-5">
+                            <p>Get Notified</p>
+                            <p class="fs-6">All the information gathered will be calculated and sent to the web app for analysis. The app will compare the performance of each product over time, such as daily, weekly, monthly, etc.</p>
+                            <p class="fs-6">After the web app has analyzed the data, it will send notifications to the end-user, as per their pre-defined settings.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 m-0 p-0">
+                        <div class="col-md-6 offset-">
+                            <div id="getnotif"class="mt-4 m-auto" style="background-image: url('assets/imgs/getnotif.png')";>
+                            </div>
+                        </div>
+                    </div>                  
+                </div> 
+            </div> 
+        </div>
+        <div class="row mb-5" >
+            <div class="col-10 m-auto pb-4 pe-4 ps-4" id="loginbox">
+                <div class="row">
+                    <div class="col-md-6 offset m-0 p-0">
+                        <div class="container p-5">
+                        <p class="text-dark fw-bold">Easy to Manage Products</p>
+                        <p class="fs-6 text-dark fw-semibold">Every time an item is taken out of the warehouse or inventory, the barcode will be entered into the order management section, where the information will be recorded and passed to the inventory tracking to deduct the item count.</p>
+                        </div>
+                    </div> 
+                    <div class="col-md-6 m-0 p-0">
+                        <div class="container-12">
+                            <div class=" m-auto justify-content-end text-end emp" style="background-image: url('assets/imgs/bgbrcode.png')";>
+                            </div>
+                        </div>
+                    </div>  
+                                    
+                </div> 
+            </div> 
+        </div>
+        <div class="row mb-5" >
+            <div class="col-10 m-auto pb-4 pe-4 ps-4" id="loginbox">
+                <div class="row">
+                    <div class="col-md-6 offset getnot text-white m-0 p-0">
+                        <div class="col-md-6 offset-">
+                            <div id="getnotif"class="mt-4 m-auto" style="background-image: url('assets/imgs/getnotif.png')";>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 m-0 p-0">
+                        <div class="container p-5">
+                            <p>Get Notified</p>
+                            <p class="fs-6">All the information gathered will be calculated and sent to the web app for analysis. The app will compare the performance of each product over time, such as daily, weekly, monthly, etc.</p>
+                            <p class="fs-6">After the web app has analyzed the data, it will send notifications to the end-user, as per their pre-defined settings.</p>
+                        </div> 
+                    </div>                  
+                </div> 
+            </div> 
+        </div>
+    <!-- <div class="container-fluid">
+        <div class="container emp">
+            <div class="row">
+                <div class="col-md justify-content-center align-items-center">
+                    <h1 class="justify-content-center align-items-center text-center">Easy To Manage Products</h1>
+                    <p>Every time an item is taken out of the warehouse or inventory, the barcode will be entered into the order management section, where the information will be recorded and passed to the inventory tracking to deduct the item count.</p>
+                </div>
+                <div class="col-md content m-0">
+                    <img src="assets/imgs/addproduct.png" alt="">
+                </div>
             </div>
         </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row content">
-            <div class="col-md d-flex justify-content-center align-items-center">
-                <h1 class="d-flex justify-content-center align-items-center ps-5 pe-5" id="staff">Manage Staffs Easily</h1>
-            </div>
-            <div class="col-md content m-0">
-                <img src="assets/imgs/addproduct.png" alt="">
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row content">
-            <div class="col-md content m-0">
-                <img src="assets/imgs/store.png" alt="">
-            </div>
-            <div class="col-md d-flex justify-content-center align-items-center">
-                <h1 class="d-flex justify-content-center align-items-center ps-5 pe-5" id="stonks">Real-Time Analytics</h1>
+        <div class="container bg-white">
+            <div class="row">
+                <div class="col-md d-flex justify-content-center align-items-center">
+                    <h1 class="d-flex justify-content-center align-items-center text-center">Easy To Manage Products</h1>
+                </div>
+                <div class="col-md content m-0">
+                    <img src="assets/imgs/addproduct.png" alt="">
+                </div>
             </div>
         </div>
-    </div>
-    <div class="container-fluid">
-        <div class="button w-25 d-flex justify-content-center m-auto mt-5">
-            <a href="#home"><button>Back to Top</button></a>
+         <!-- ?<div class="container bg-white">
+            <div class="row">
+                <div class="col-md d-flex justify-content-center align-items-center">
+                    <h1 class="d-flex justify-content-center align-items-center text-center">Easy To Manage Products</h1>
+                </div>
+                <div class="col-md content m-0">
+                    <img src="assets/imgs/addproduct.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="container bg-white"> 
+            <div class="row">
+                <div class="col-md m-0">
+                    <img src="assets/imgs/getnotified.png" alt="">
+                </div>
+                <div class="col-md d-flex justify-content-center align-items-center">
+                    <h1 class="d-flex justify-content-center align-items-center text-center">Alert for Low on Stocks!</h1>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md d-flex justify-content-center align-items-center">
+                    <h1 class="d-flex justify-content-center align-items-center text-center" id="staff">Manage Staffs Easily</h1>
+                </div>
+                <div class="col-md m-0">
+                    <img src="assets/imgs/addproduct.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md m-0">
+                    <img src="assets/imgs/store.png" alt="">
+                </div>
+                <div class="col-md d-flex justify-content-center align-items-center">
+                    <h1 class="d-flex justify-content-center align-items-center text-center" id="stonks">Real-Time Analytics</h1>
+                </div>
+            </div>
+        </div> --> 
+          
+        <div class="button w-25 d-flex justify-content-center m-auto mt-5 ">
+            <a href="#home"><button class="save text-white mb-5">Back to Top</button></a>
         </div>    
-    </div>
-</section>
-</div>
-    <footer class="container-fluid">
-        <div class="row d-flex justify-content-center">
+    </div>        
+    <footer class="container">
+        <div class="row d-flex justify-content-center mt-4">
             2023 copyright | Terms and Conditions | Privacy policy
         </div>
     </footer>
