@@ -25,6 +25,7 @@ section{
 .introduction{
     height: 86vh;
     background: url(../imgs/Small-Business-Self-Storage.jpg);
+    background-attachment: fixed;
 }
 
 #stonks{
@@ -36,7 +37,11 @@ section{
 .introduction .row{
     background: #3067A5;
 }
-.content h1,.introduction .row h1{
+.row h1{
+    font-size: 5rem;
+    text-shadow: 2px 2px 2px #000000;
+}
+.content h1,.introduction{
     font-size: 3rem;
     color: #FAD550;
     text-shadow: 2px 2px 2px #000000; 
