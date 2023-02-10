@@ -44,50 +44,51 @@
     </header>
     <hr>
     <div class="container content p-5 justify-content-center">
-        <h2 class="row justify-content-center mt-1 mb-1">Staff Management</h2>
-        <div class="row d-flex justify-content-center mt-1 mb-1">
-            <label class="col-1 justify-content-center mt-1 mb-1" for="name">Enter Name:</label>
-            <input class="col-4 mt-1 mb-1 d-inline-block" type="text" name="" id="">
-            <label class="col-1 justify-content-center mt-1 mb-1 d-flex justify-content-center align-items-center" for="level">Level:</label>
+        <h2 class="row justify-content-center mt-1 mb-5">Staff Management</h2>
+        <div class="row d-flex justify-content-evenly mt-1 mb-1">
+            <label class="col-3 col-md-1 mt-1 mb-1" for="name">Enter Name:</label>
+            <input class="col-3 col-md-4 mt-1 mb-1 d-inline-block" type="text" name="" id="">
+            <label class="col-3 col-md-1 justify-content-center mt-1 mb-1 d-flex justify-content-center align-items-center" for="level">Level:</label>
             <input class="col-3 mt-1 mb-1 d-inline-block" type="text" name="" id="">    
         </div>
         <br>
         <div class="row w-25 d-flex justify-content-center m-auto">
-                <button  type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary bg-success mt-1 mb-1">Register</button>
-            </div>
-        <h2 class="row justify-content-center mt-1 mb-1">Registered Staffs</h2>
-        <div class="row">
+            <button  type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary bg-success mt-1 mb-1">Register</button>
+        </div>
+        <h2 class="row justify-content-center mt-5 mb-5">Registered Staffs</h2>
+        <div class="row d-flex justify-content-evenly">
             <h4 class="col-7 d-flex justify-content-center mt-1 mb-1">Full Name:</h4>
             <h4 class="col-3 d-flex justify-content-center mt-1 mb-1">Level:</h4>
         </div>
-        <div class="row">
+        <div class="row d-flex justify-content-evenly">
+            <input type="checkbox" name="" id="checkbox">
             <input class="col-7 m-0 d-inline-block mt-1 mb-1" type="text" name="" id="">
             <input class="col-3 m-0 d-inline-block mt-1 mb-1" type="text" name="" id="">
-            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary bg-danger col-2 mt-1 mb-1">Remove</button>
         </div>
-        <div class="row">
+        <div class="row d-flex justify-content-evenly">
+            <input type="checkbox" name="" id="checkbox">
             <input class="col-7 m-0 d-inline-block mt-1 mb-1" type="text" name="" id="">
             <input class="col-3 m-0 d-inline-block mt-1 mb-1" type="text" name="" id="">
-            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary bg-danger col-2 mt-1 mb-1">Remove</button>
         </div>
-        <div class="row">
+        <div class="row d-flex justify-content-evenly">
+            <input type="checkbox" name="" id="checkbox">
             <input class="col-7 m-0 d-inline-block mt-1 mb-1" type="text" name="" id="">
             <input class="col-3 m-0 d-inline-block mt-1 mb-1" type="text" name="" id="">
-            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary bg-danger col-2 mt-1 mb-1">Remove</button>
         </div>
-        <div class="row">
+        <div class="row d-flex justify-content-evenly">
+            <input type="checkbox" name="" id="checkbox">
             <input class="col-7 m-0 d-inline-block mt-1 mb-1" type="text" name="" id="">
             <input class="col-3 m-0 d-inline-block mt-1 mb-1" type="text" name="" id="">
-            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary bg-danger col-2 mt-1 mb-1">Remove</button>
         </div>
-        <div class="row">
+        <div class="row d-flex justify-content-evenly">
+            <input type="checkbox" name="" id="checkbox">
             <input class="col-7 m-0 d-inline-block mt-1 mb-1" type="text" name="" id="">
             <input class="col-3 m-0 d-inline-block mt-1 mb-1" type="text" name="" id="">
-            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary bg-danger col-2 mt-1 mb-1">Remove</button>
         </div>
+
         <div class="row d-flex justify-content-evenly mt-4 mb-2">
             <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary col-2 bg-success">Save</button>
-            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary col-2 bg-danger">Cancel</button>
+            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary col-2 bg-danger">Delete</button>
         </div>
         <!-- ----------------- -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
