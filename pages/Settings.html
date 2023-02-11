@@ -47,26 +47,27 @@
     </header>
     <hr>
     
-
-    <div class="row d-flex justify-content-evenly pt-4 m-auto"> 
-        <div class="wrapper-grid-login justify-content-center m-auto mb-5">
-            <div class="container">
-                <div class="box justify-content-center content pt-3 ps-5 pe-5 pb-3">
-                    <h3 class="text-center text-white">Account Info</h3>
-                    <form>   
-                        Owner's Name:<input class="w-100 justify-content-center m-auto text-center mb-2 border-0">
-                        Company Name:<input class="w-100 row justify-content-center m-auto text-center mb-2 border-0">
-                        Email:<input class="w-100 justify-content-center m-auto text-center mb-2 border-0">
-                        Company Address:<textarea cols="30" rows="10" class="w-100 m-2"></textarea>
-                    </form>
-                    <div class="row d-flex justify-content-evenly mt-4 mb-2">
-                        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary col-2 save">Save</button>
-                        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary col-2 delete">Cancel</button>
-                    </div>
-                </div>
-            </div>
-        </div>  
-    </div> 
+    <div class="container m-auto" >
+        <div class="row mb-5" >
+            <div class="col-10 m-auto pb-4 pe-4 ps-4 content" id="loginbox">
+                <div class="row" >
+                    <div class="col-md-12">
+                        <h2 class="d-flex justify-content-center mt-3 mb-3">Account Info</h2>
+                        <form>   
+                            Owner's Name:<input class="w-100 justify-content-center m-auto text-center mb-2 border-0">
+                            Company Name:<input class="w-100 row justify-content-center m-auto text-center mb-2 border-0">
+                            Email:<input class="w-100 justify-content-center m-auto text-center mb-2 border-0">
+                            Company Address:<textarea cols="30" rows="10" class="w-100 m-2"></textarea>
+                        </form>
+                        <div class="row d-flex justify-content-evenly mt-4 mb-2">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary col-2 save">Save</button>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary col-2 delete">Cancel</button>
+                        </div>
+                    </div>                  
+                </div> 
+            </div> 
+        </div>
+    </div>
         <!-- ----------------- -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">

@@ -10,26 +10,26 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-   <header id="home" class="container-fluid mb-4 header"> 
+   <header id="home" class="container-fluid header"> 
         <div class="row">
             <div class="col-lg col-md-12 d-flex justify-content-center align-items-center p-3">
-                <a href="index.html"><img class="logo lessradius" src="assets/imgs/logo.png" class="logo" alt=""></a>
+                <a href="index.html"><img class="logo lessradius" src="assets/imgs/logo.png" alt=""></a>
             </div>
-            <div class="col-lg d-flex justify-content-center align-items-center ">
-                <input placeholder="Search here...">
+            <div class="col-lg d-flex justify-content-center align-items-center">
+                <input class="lessradius hborder" placeholder="Search here...">
             </div>
             <div class="col-lg d-flex justify-content-center align-items-center">
                 <ul class="p-0 m-0">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="pages/signup.html">Sign-Up</a></li>
-                    <li><a href="pages/login.html">Login</a></li>
+                    <li><a class="bg-primary text-white" href="pages/login.html">Login</a></li>
                 </ul>
             </div>
         </div>
     </header>  
-    <div class="container-fluid">
+    <div class="container-fluid m-0 p-0">
         <div class="row">
-            <div class="col-10 justify-content-center m-auto pb-5">
+            <!-- <div class="col-10 justify-content-center m-auto pb-5"> -->
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
                     <div class="carousel-indicators">
                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -52,10 +52,123 @@
                       <span class="visually-hidden">Next</span>
                     </button>
                   </div>
-            </div>
+            <!-- </div> -->
         </div>
     </div> 
-    <div class="container-fluid m-auto bg-white pt-5" >
+    <div class="container m-auto pt-5" >
+        <div class="row mb-5" >
+            <div class="col-12 m-auto pe-4 ps-4" id="loginbox">
+                <div class="row justify-content-evenly" >
+                    <h2 class="text-center">Essential features for effective and eficient inventory management</h2>
+                    <div class="col-md-3 content p-0 mb-5 me-3 ms-3 bg-body rounded">
+                        <img class="imgdescription" src="assets/imgs/getnotif.png" alt="">
+                        <div class="description">
+                            <h4>Get Notified!</h4>
+                            <p6>After the web app has analyzed the data, it will send notifications to the end-user, as per their pre-defined settings.</p6>
+                        </div>
+                    </div>
+                    <div class="col-md-3 content p-0 mb-5 ms-3 me-3 bg-body rounded">
+                        <img class="imgdescription" src="assets/imgs/bgbrcode.png" alt="">
+                        <div class="description">
+                            <h4>Get Notified!</h4>
+                            <p6>After the web app has analyzed the data, it will send notifications to the end-user, as per their pre-defined settings.</p6>
+                        </div>
+                    </div>  
+                    <div class="col-md-3 content p-0 mb-5 me-3 ms-3 bg-body rounded">
+                        <img class="imgdescription" src="assets/imgs/realtimeanalytics.png" alt="">
+                        <div class="description">
+                            <h4>Get Notified!</h4>
+                            <p6>After the web app has analyzed the data, it will send notifications to the end-user, as per their pre-defined settings.</p6>
+                        </div>
+                    </div>                
+                </div> 
+            </div> 
+        </div>
+        <div class="row mb-5" >
+            <div class="col-12 m-auto pe-4 ps-4" id="loginbox">
+                <div class="row justify-content-evenly" >
+                    <div class="col-md-3 content p-0 mb-4 me-3 ms-3 bg-body rounded">
+                        <img class="imgdescription" src="assets/imgs/getnotif.png" alt="">
+                        <div class="description">
+                            <h4>Get Notified!</h4>
+                            <p6>After the web app has analyzed the data, it will send notifications to the end-user, as per their pre-defined settings.</p6>
+                        </div>
+                    </div>
+                    <div class="col-md-3 content p-0 mb-4 ms-3 me-3 bg-body rounded">
+                        <img class="imgdescription" src="assets/imgs/bgbrcode.png" alt="">
+                        <div class="description">
+                            <h4>Get Notified!</h4>
+                            <p6>After the web app has analyzed the data, it will send notifications to the end-user, as per their pre-defined settings.</p6>
+                        </div>
+                    </div>  
+                    <div class="col-md-3 content p-0 mb-4 me-3 ms-3 bg-body rounded">
+                        <img class="imgdescription" src="assets/imgs/realtimeanalytics.png" alt="">
+                        <div class="description">
+                            <h4>Get Notified!</h4>
+                            <p6>After the web app has analyzed the data, it will send notifications to the end-user, as per their pre-defined settings.</p6>
+                        </div>
+                    </div>                
+                </div> 
+            </div> 
+        </div>
+    </div>
+    
+   <!--<div class="container-fluid"> 
+        <div class="row content bg-white">
+            <div class="col-md content m-0" style="background-image: url('assets/imgs/alertcp.png')">
+                <img src="assets/imgs/Alert.png" alt="">
+            </div>
+            <div class="col-md d-flex justify-content-center align-items-center">
+                <h1 class="d-flex justify-content-center align-items-center" id="alert">Get Notified!</h1>
+            </div>
+        </div>
+    </div>
+     <!-- <div class="container-fluid">
+        <div class="row content">
+            <div class="col-md d-flex justify-content-center align-items-center">
+                <h1 class="d-flex justify-content-center align-items-center">Easy To Manage Products</h1>
+            </div>
+            <div class="col-md content m-0">
+                <img src="assets/imgs/addproduct.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row content">
+            <div class="col-md content m-0">
+                <img src="assets/imgs/alert1.png" alt="">
+            </div>
+            <div class="col-md d-flex justify-content-center align-items-center">
+                <h1 class="d-flex justify-content-center align-items-center">Alert for Low on Stocks!</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row content">
+            <div class="col-md d-flex justify-content-center align-items-center">
+                <h1 class="d-flex justify-content-center align-items-center" id="staff">Manage Staffs Easily</h1>
+            </div>
+            <div class="col-md content m-0">
+                <img src="assets/imgs/addproduct.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row content">
+            <div class="col-md content m-0">
+                <img src="assets/imgs/store.png" alt="">
+            </div>
+            <div class="col-md d-flex justify-content-center align-items-center">
+                <h1 class="d-flex justify-content-center align-items-center" id="stonks">Real-Time Analytics</h1>
+            </div>
+        </div>
+    <div class="container-fluid">
+        <div class="button w-25 d-flex justify-content-center m-auto mt-5">
+            <a href="#home"><button>Back to Top</button></a>
+        </div>    
+    </div>
+</div>
+    <!-- <div class="container-fluid m-auto bg-white pt-5" > 
         <div class="row mb-5" >
             <div class="col-10 m-auto pb-4 pe-4 ps-4" id="loginbox">
                 <div class="row">
@@ -176,12 +289,12 @@
             </div>
         </div> --> 
           
-        <div class="button w-25 d-flex justify-content-center m-auto mt-5 ">
-            <a href="#home"><button class="save text-white mb-5">Back to Top</button></a>
+        <div class="button w-25 d-flex justify-content-center m-auto border-0">
+            <a href="#home"><button class="save text-white mb-5 border-0 lessradius">Back to Top</button></a>
         </div>    
     </div>        
     <footer class="container">
-        <div class="row d-flex justify-content-center mt-4">
+        <div class="row d-flex justify-content-center text-center">
             2023 copyright | Terms and Conditions | Privacy policy
         </div>
     </footer>
