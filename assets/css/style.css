@@ -72,6 +72,9 @@ input:focus {
 .lessradius{
     border-radius: 10px;
 }
+.noradius{
+    border-radius: 0px;
+}
 #addImg{
     height: 50%;
     width: 100%;
@@ -99,14 +102,16 @@ ul li ul.dropdown li{
 }
 ul li ul.dropdown{
     width: 100%;
-    background: #22438C;
+    background: rgb(207, 204, 204);
     position: absolute;
     z-index: 5;
     display: none;
+    color: whitesmoke;
 }
 ul li a:hover{
-    background: #1cbe16;
+    background: rgb(158, 155, 155);
     color: white;
+    border-radius: 0px;
 }
 ul li:hover ul.dropdown{
     display: block;
