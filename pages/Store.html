@@ -10,13 +10,13 @@
     <title>Store</title>
 </head>
 <body>
-    <header id="home" class="container-fluid mb-4 header">
+    <header id="home" class="container-fluid p-0 m-0 border-bottom"> 
         <div class="row">
             <div class="col-lg col-md-12 d-flex justify-content-center align-items-center p-3">
-                <a href="../index.html"><img class="logo lessradius" src="../assets/imgs/logo.png" alt=""></a>
+                <a href="home.html"><img class="logo lessradius" src="../assets/imgs/logo.png" alt=""></a>
             </div>
             <div class="col-lg d-flex justify-content-center align-items-center">
-                <input placeholder="Search here...">
+                <input class="lessradius hborder" placeholder="Search here...">
             </div>
             <div class="col-lg d-flex justify-content-evenly align-items-center">
                 <ul class="m-0 p-0 d-inline-block">
@@ -29,7 +29,7 @@
                 </ul>
                 <img class="" src="../assets/imgs/sampleStore.png" alt="" id="userpic">
                 <ul class="m-0 p-0 d-inline-block">
-                    <li><a href="store.html" class="ps-1 pe-1">STORE NAME ▾</a>
+                    <li><a href="store.html" class="ps-1 pe-1 noradius">STORE NAME ▾</a>
                         <ul class="dropdown p-0">
                             <li><a href="home.html">Home</a></li>
                             <li><a href="addproduct.html">Add Product</a></li>
@@ -42,17 +42,17 @@
                     </li>
                 </ul>
             </div>
-        </div>       
+        </div>
     </header>
-    <div class="container-fluid content p-5 d-flex justify-content-center align-items-center">
+    <div class="container background content mb-5 ingrap d-flex justify-content-center align-items-center">
         <div class="row">
             <h1 class="col-12 d-flex justify-content-center h-auto">Inventory Graph</h1>
             <img src="../assets/imgs/pigraph.jpg" alt="">
         </div>
     </div>
-    <div class="container-fluid content">
-        <div class="row content d-flex justify-content-evenly p-5"> 
-                <div class="col-lg-2 col-md-4 bg-success m-2 store">
+    <div class="container">
+        <div class="row d-flex justify-content-evenly p-5 contbor"> 
+                <div class="col-lg-2 col-md-4 bg-success m-2 store rounded p-3">
                     <P class="text-center text-white">TOP<BR>GROSSING</P>          
                     <div class="box bg-white m-auto mb-1">
                         <div class="d-inline-block col-md-3 h-100 border-end text-center fw-bold fs-4">#1</div>
@@ -75,7 +75,7 @@
                         <div class="d-inline-block"></div>
                     </div>
                 </div>                    
-                <div class="col-lg-2 col-md-4 bg-success m-2 store">
+                <div class="col-lg-2 col-md-4 bg-success m-2 store rounded p-3">
                     <P class="text-center text-white">TOP<BR>PEFORMING</P>          
                     <div class="box bg-white m-auto mb-1">
                         <div class="d-inline-block col-md-3 h-100 border-end text-center fw-bold fs-4">#1</div>
@@ -98,7 +98,7 @@
                         <div class="d-inline-block"></div>
                     </div>
                 </div>                    
-                <div class="col-lg-2 col-md-4 bg-success m-2 store">
+                <div class="col-lg-2 col-md-4 bg-success m-2 store rounded p-3">
                     <P class="text-center text-white">FAST<BR>MOVING</P> 
                     <div class="box bg-white m-auto mb-1">
                         <div class="d-inline-block col-md-3 h-100 border-end text-center fw-bold fs-4">#1</div>
@@ -121,7 +121,7 @@
                         <div class="d-inline-block"></div>
                     </div>         
                 </div>                    
-                <div class="col-lg-2 col-md-4 bg-secondary m-2 store">
+                <div class="col-lg-2 col-md-4 bg-secondary m-2 store rounded p-3">
                     <P class="text-center text-white">SLOW<BR>MOVING</P>
                     <div class="box bg-white m-auto mb-1">
                         <div class="d-inline-block col-md-3 h-100 border-end text-center fw-bold fs-4">#1</div>
@@ -144,8 +144,8 @@
                         <div class="d-inline-block"></div>
                     </div>          
                 </div>                    
-                <div class="col-lg-2 col-md-4 bg-danger m-2 store">
-                    <P class=" text-center text-white expiry"><br>EXPIRING<br></P> 
+                <div class="col-lg-2 col-md-4 bg-danger m-2 store rounded p-3">
+                    <P class=" text-center text-white align-content-center expiry">EXPIRING</P> 
                     <div class="box bg-white m-auto mb-1">
                         <div class="d-inline-block col-md-3 h-100 border-end text-center fw-bold fs-4">#1</div>
                         <div class="d-inline-block"></div>
@@ -169,21 +169,45 @@
                 </div>                  
         </div>
     </div>
-    <div class="container-fluid content p-5 d-flex justify-content-evenly align-items-center">
-        <div class="row pb-5">
-            <div class="col-lg col-md-12">
-                <h2 class="text-white fw-bold text-center d-flex justify-content-center" id="mhp">MUST HAVES</h2>
-                <img src="../assets/imgs/tide.jfif" alt="">
+    <div class="container-fluid d-flex justify-content-evenly align-items-center mt-5 mb-5">
+        <div class="row">
+            <div class="col-lg col-md-12 m-0 p-0">
+                <h2 class="fw-bold text-center d-flex justify-content-center m-0 p-4 mhp">MUST HAVES</h2>
+                <img style='height: 450px; width:100%; object-fit:contain' class="p-2 mhimg" src="../assets/imgs/tide.jfif" alt=""/>
             </div>
-            <div id="mhp" class="col-lg col-md-12">
-                <h2 class="text-white fw-bold text-center text-truncate d-flex justify-content-center">TOP SEARCHED</h2>
-                <img src="../assets/imgs/dishwash.png" alt="">
+            <div id="mhp" class="col-lg col-md-12 m-0 p-0">
+                <h2 class="fw-bold text-center text-truncate d-flex justify-content-center m-0 p-4 mhp1">TOP SEARCHED</h2>
+                <img style='height: 450px; width: 100%; object-fit: contain' class="p-2 mhimg" src="../assets/imgs/dishwash.png" alt="">
             </div>
         </div>
     </div>
-    <footer class="container m-auto">
-        <div class="d-flex justify-content-center text-center">
-            2023 copyright | Terms and Conditions | Privacy policy
+    <div class="container-fluid pb-5 fc d-flex justify-content-evenly pt-5">
+        <div class="col-2">
+            <p class="text-white fctitle">Follow us</p>
+            <div class="row d-flex">
+                <a href="#"><img class="fb icon m-0 p-0 ms-3" src="../assets/imgs/fbd.png" alt="">
+                <img class="fb icon m-0 p-0 ms-2" src="../assets/imgs/instad.png" alt="">
+                <img class="fb icon m-0 p-0 ms-2" src="../assets/imgs/twitterd.png" alt=""></a>
+            </div>
+        </div>
+        <div class="col-2">
+            <p class="text-white fctitle">Company</p>
+            <p class="fdescript"><a href="#" class="text-decoration-none fdescript">About us</a></p>
+            <p class="fdescript"><a href="#" class="text-decoration-none fdescript">Partner Program</a></p>
+            <p class="fdescript"><a href="#" class="text-decoration-none fdescript">FAQ</a></p>
+        </div>
+        <div class="col-2">
+            <p class="text-white fctitle">Support</p>
+            <p class="fdescript"><a href="pages/contact.html" class="text-decoration-none fdescript">Contact Support</a></p>
+            <p class="fdescript"><a href="#" class="text-decoration-none fdescript">Professional Services</a></p>
+            <p class="fdescript"><a href="#" class="text-decoration-none fdescript">FB Community</a></p>
+            <p class="fdescript"><a href="#" class="text-decoration-none fdescript">Webinars</a></p>
+        </div>
+    </div>
+    </div>
+    <footer class="container-fluid fixed-bottom indexfbg">
+        <div class="p-2 row d-flex justify-content-center text-center text-white">
+            &copy; 2023 copyright | Terms and Conditions | Privacy policy
         </div>
     </footer>                 
 </body>

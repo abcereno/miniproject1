@@ -6,6 +6,7 @@
 html{
     scroll-behavior: smooth;
 }
+
 .logo{
     max-height:50px;
 }
@@ -131,10 +132,13 @@ h3{
     font-size: 36px;
 }
 .save{
-    background-color:#1cbe16;;
+    background-color:#1cbe16;
+    max-width: 150px;
 }
 .delete{
     background-color:#f00606 ;
+    max-width: 150px;
+
 }
 .expiry{
     line-height: 54px;
@@ -210,9 +214,65 @@ footer{
 .fdescript a:hover{
     color: rgba(255, 255, 255, 0.5);
 }
-.fb:hover{
-    background-image: url('assets/imgs/fbhover.png');
+.background{
+    background: rgb(1,42,96); 
+    background: -moz-linear-gradient(0deg, rgba(1,42,96,1) 0%, rgba(48,103,165,1) 50%, rgba(116,157,237,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(1,42,96,1) 0%, rgba(48,103,165,1) 50%, rgba(116,157,237,1) 100%);
+    background: linear-gradient(0deg, rgba(1,42,96,1) 0%, rgba(48,103,165,1) 50%, rgba(116,157,237,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#012a60",endColorstr="#749ded",GradientType=1);
 }
+.otherbg{
+    background-image: url(../imgs/bgs.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.clipath{
+    border-top-left-radius: 100px;
+    box-shadow: #fad550 15px 15px;
+}
+.yellowshadow{
+    box-shadow: #fad550 15px 15px;
+}
+.title{
+    color: #055203;
+    text-shadow: 10px 1px 10px;
+}
+.subtitle{
+    color: #055203;
+    text-shadow: 1px 1px 1px;
+}
+.subtitlep{
+    color: #055203;
+    font-weight:700;
+}
+.loginbox{
+    background: rgba(63, 111, 207, 0.651);
+    border-radius: 30px;
+}
+.expiry{
+    line-height: 54px;
+}
+.contbor{
+    border-radius: 20px;
+    border:solid 10px green;
+    background-color: rgb(23, 100, 23);
+}
+.ingrap{
+    border-bottom:  rgb(1,42,96) 10px solid;
+    border-radius: 100px;
+}
+.mhp{
+    background-color: #e6b816;
+    border-top-left-radius: 20px;
+}
+.mhp1{
+    background: #e6b816;
+    border-top-right-radius: 20px;
+}
+.mhimg{
+    background:#FAD550;
+}
+
 
 
 
@@ -232,6 +292,9 @@ footer{
     }
     .logimage{
         display: none;
+    }
+    .otherbg{
+        background: #272f56;
     }
 }
 @media(min-width: 768px){
