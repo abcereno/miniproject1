@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../assets/css/bootstrap.css">
     <script src="../assets/js/bootstrap.bundle.js"></script>
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="../assets/js/main.js"></script>
 </head>
 <body>
     <header id="home" class="container-fluid p-0 m-0"> 
@@ -42,6 +44,7 @@
                     </li>
                 </ul>
             </div>
+<<<<<<< HEAD
         </div>
     </header>         
     <div class="container-fluid content otherbg m-0 p-5">
@@ -72,6 +75,45 @@
             <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="content btn btn-primary col-2 delete">Delete</button>
         </div>-->
     </div>
+=======
+        </div>       
+    </header>
+    <hr>
+    <div class="container content">
+        <div class="row">
+            <div class="picture m-auto col-md-4 col-12 p-3">
+                <a href="#"><img class="mt-1 mb-1" id="addImg" src="../assets/imgs/upload.png" alt=""></a>
+                <input class="mt-1 mb-1" placeholder="Product Name" id="Pname" type="text">
+                <input class="mt-1 mb-1" placeholder="Stock Count" id="Scount" type="number">
+            </div>
+            <div class="col-md-8 col-12 p-3">
+                <input class="col-4 col-md-4 d-inline-block mt-1 mb-1" placeholder="Cost:" id="cost" type="number"
+                ><input class="col-4 col-md-4 d-inline-block mt-1 mb-1" placeholder="Retail:" id="retail" type="number"
+                ><input class="col-4 col-md-4 d-inline-block mt-1 mb-1" placeholder="Margin:" id="margin" type="number">
+                <textarea class="w-100 p-2" placeholder="Enter Item Description..." id="description" name="" id="" cols="30" rows="10">
+                </textarea>
+                <input class="col-md-4 col-12 d-inline-block mt-1 mb-1" placeholder="Date Ordered:" id="Dordered" type="date"
+                ><input class="col-md-4 col-12 d-inline-block mt-1 mb-1" placeholder="Date Delivered:" id="Ddelivered" type="date"
+                ><input class="col-md-4 col-12 d-inline-block mt-1 mb-1" placeholder="Supplier Name:" id="Sname" type="text">
+            </div>
+            <div class="row d-flex justify-content-evenly mt-4 p-3">
+                <button type="button" id="Iadd" class="btn btn-primary col-5 col-md-4 bg-success">Add</button>
+                <button type="button" id="Sclear" class="btn btn-primary col-5 col-md-4 bg-danger">Clear</button>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <input class="SSall" type="checkbox" name="" id="checkbox">Products:
+                    <ol class="p-0" id="Ilist">  
+                    </ol>
+                </div>
+                <div class="col-md-10" id="Idetails">
+                    <ol id="Ilistdetails">Item Details:
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <button type="button" id="Pdelete" class="btn btn-primary col-2 bg-danger deleteThis">Delete</button>
+>>>>>>> ea8adb8cf57e87c238adcd68d4bdd19b23b5efc8
         <!-- ----------------- -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">

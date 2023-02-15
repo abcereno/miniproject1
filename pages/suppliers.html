@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../assets/css/bootstrap.css">
     <script src="../assets/js/bootstrap.bundle.js"></script>
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="../assets/js/main.js"></script>
 </head>
 <body>
     <header id="home" class="container-fluid p-0 m-0"> 
@@ -53,33 +55,22 @@
                 <h5 class="col-1 d-flex mt-1 mb-1 subtitle">QTY:</h5>
                 <h5 class="col-2 d-flex mt-1 mb-1 subtitle">AVG. D/T:</h5>
             </div>
-            <div class="row d-flex justify-content-center mt-1 mb-1">
-                <input class="col-4 mt-1 mb-1 ms-1 me-1 lessradius" type="text">
-                <input class="col-3 mt-1 mb-1 ms-1 me-1 lessradius" type="text">
-                <input class="col-1 mt-1 mb-1 ms-1 me-1 lessradius" type="text">
-                <input class="col-2 mt-1 mb-1 ms-1 me-1 lessradius" type="text">
+            <div class="row d-flex justify-content-evenly mt-1 mb-1">
+                <input class="SSall" type="checkbox" name="" id="checkbox">
+                <input id="companyName" class="col-3 col-md-3 mt-1 mb-1" type="text">
+                <input id="companyProduct" class="col-3 col-md-2 mt-1 mb-1" type="text">
+                <input id="pieces" class="col-2 col-md-1 mt-1 mb-1" type="number">
+                <input id="avgDelivery" class="col-2 col-md-2 mt-1 mb-1" type="number">
             </div>
-            <div class="row d-flex justify-content-center mt-1 mb-1">
-                <input class="col-4 mt-1 mb-1 ms-1 me-1 lessradius" type="text">
-                <input class="col-3 mt-1 mb-1 ms-1 me-1 lessradius" type="text">
-                <input class="col-1 mt-1 mb-1 ms-1 me-1 lessradius" type="text">
-                <input class="col-2 mt-1 mb-1 ms-1 me-1 lessradius" type="text">
-            </div>
-            <div class="row d-flex justify-content-center mt-1 mb-1">
-                <input class="col-4 mt-1 mb-1 ms-1 me-1 lessradius" type="text">
-                <input class="col-3 mt-1 mb-1 ms-1 me-1 lessradius" type="text">
-                <input class="col-1 mt-1 mb-1 ms-1 me-1 lessradius" type="text">
-                <input class="col-2 mt-1 mb-1 ms-1 me-1 lessradius" type="text">
-            </div>
-            <div class="row d-flex justify-content-center mt-1 mb-1">
-                <input class="col-4 mt-1 mb-1 ms-1 me-1 lessradius" type="text">
-                <input class="col-3 mt-1 mb-1 ms-1 me-1 lessradius" type="text">
-                <input class="col-1 mt-1 mb-1 ms-1 me-1 lessradius" type="text">
-                <input class="col-2 mt-1 mb-1 ms-1 me-1 lessradius" type="text">
-            </div>
+            <div class="row">
+                <ol id="suppList">
+                        
+                </ol>
+            </div> 
             <div class="row d-flex justify-content-evenly mt-4 mb-2">
-                <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary col-2 save">Save</button>
-                <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary col-2 delete">Cancel</button>
+                <button type="button" id="suppAdd" class="btn btn-primary col-2 bg-info">Add</button>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary col-2 bg-success">Save</button>
+                <button type="button" class="Sdelete btn btn-primary col-2 bg-danger">Delete</button>
             </div>
         </div>    
     </div>

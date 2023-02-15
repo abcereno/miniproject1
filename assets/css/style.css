@@ -21,7 +21,7 @@ html{
     background: url(../imgs/stonks.jpg);
     background-size: cover;
 }
-.introduction .row{
+.introduction .row ,.title,.content  {
     background: #3067A5;
     
 }
