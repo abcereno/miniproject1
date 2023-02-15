@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../assets/css/bootstrap.css">
     <script src="../assets/js/bootstrap.bundle.js"></script>
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="../assets/js/main.js"></script>
 </head>
 <body>
     <header id="home" class="container-fluid mb-4 header">
@@ -47,48 +49,45 @@
         <h2 class="row justify-content-center mt-1 mb-5">Staff Management</h2>
         <div class="row d-flex justify-content-evenly mt-1 mb-1">
             <label class="col-3 col-md-1 mt-1 mb-1" for="name">Enter Name:</label>
-            <input class="col-3 col-md-4 mt-1 mb-1 d-inline-block" type="text" name="" id="">
+            <input class="col-3 col-md-4 mt-1 mb-1 d-inline-block" type="text" name="" id="Fname">
             <label class="col-3 col-md-1 justify-content-center mt-1 mb-1 d-flex justify-content-center align-items-center" for="level">Level:</label>
-            <input class="col-3 mt-1 mb-1 d-inline-block" type="text" name="" id="">    
+            <input class="col-3 mt-1 mb-1 d-inline-block" type="text" name="" id="Slevel">    
         </div>
         <br>
         <div class="row w-25 d-flex justify-content-center m-auto">
-            <button  type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary bg-success mt-1 mb-1">Register</button>
+            <button id="Sregister"  type="button" class="btn btn-primary bg-success mt-1 mb-1">Register</button>
         </div>
+        <!-- Labels -->
         <h2 class="row justify-content-center mt-5 mb-5">Registered Staffs</h2>
         <div class="row d-flex justify-content-evenly">
+            <input class="SSall" type="checkbox" name="" id="checkbox"> 
             <h4 class="col-7 d-flex justify-content-center mt-1 mb-1">Full Name:</h4>
             <h4 class="col-3 d-flex justify-content-center mt-1 mb-1">Level:</h4>
         </div>
-        <div class="row d-flex justify-content-evenly">
-            <input type="checkbox" name="" id="checkbox">
-            <input class="col-7 m-0 d-inline-block mt-1 mb-1" type="text" name="" id="">
-            <input class="col-3 m-0 d-inline-block mt-1 mb-1" type="text" name="" id="">
-        </div>
-        <div class="row d-flex justify-content-evenly">
-            <input type="checkbox" name="" id="checkbox">
-            <input class="col-7 m-0 d-inline-block mt-1 mb-1" type="text" name="" id="">
-            <input class="col-3 m-0 d-inline-block mt-1 mb-1" type="text" name="" id="">
-        </div>
-        <div class="row d-flex justify-content-evenly">
-            <input type="checkbox" name="" id="checkbox">
-            <input class="col-7 m-0 d-inline-block mt-1 mb-1" type="text" name="" id="">
-            <input class="col-3 m-0 d-inline-block mt-1 mb-1" type="text" name="" id="">
-        </div>
-        <div class="row d-flex justify-content-evenly">
-            <input type="checkbox" name="" id="checkbox">
-            <input class="col-7 m-0 d-inline-block mt-1 mb-1" type="text" name="" id="">
-            <input class="col-3 m-0 d-inline-block mt-1 mb-1" type="text" name="" id="">
-        </div>
-        <div class="row d-flex justify-content-evenly">
-            <input type="checkbox" name="" id="checkbox">
-            <input class="col-7 m-0 d-inline-block mt-1 mb-1" type="text" name="" id="">
-            <input class="col-3 m-0 d-inline-block mt-1 mb-1" type="text" name="" id="">
-        </div>
-
+        <!-- appended registered staffs -->
+        <div class="row">
+            <ol id="Slist">
+                <li>
+                    <div class="row d-flex justify-content-evenly">
+                        <input type="checkbox" name="" id="checkbox">
+                        <h6 class="col-7 m-0 d-inline-block mt-1 mb-1 d-flex justify-content-center" id="">Anthony Bernard Cereno</h6>
+                        <h6 class="col-3 m-0 d-inline-block mt-1 mb-1 d-flex justify-content-center" id="">Owner</h6>
+                    </div>
+                </li>
+                <li>
+                    <div class="row d-flex justify-content-evenly">
+                        <input type="checkbox" name="" id="checkbox">
+                        <h6 class="col-7 m-0 d-inline-block mt-1 mb-1 d-flex justify-content-center" id="">Kristine Osea</h6>
+                        <h6 class="col-3 m-0 d-inline-block mt-1 mb-1 d-flex justify-content-center" id="">Owner</h6>
+                    </div>
+                </li>  
+            </ol>
+        </div>    
+        <!-- button -->
         <div class="row d-flex justify-content-evenly mt-4 mb-2">
+            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary col-2 bg-info d-flex justify-content-center">Message</button>
             <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary col-2 bg-success">Save</button>
-            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary col-2 bg-danger">Delete</button>
+            <button type="button" class="Sdelete btn btn-primary col-2 bg-danger">Delete</button>
         </div>
         <!-- ----------------- -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

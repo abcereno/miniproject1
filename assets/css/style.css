@@ -5,22 +5,10 @@ body{
     background: linear-gradient(#012A60 100%, #012A60 25%, #012A60 75%, #012A60 100%);
     overflow-x: hidden;
 }
-/* #container1{
-    perspective: 10px;
-    overflow-y: auto;
-    overflow-x: hidden;
-}
-#header{
-    position:relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    transform-style: preserve-3d;
-    z-index: -1;
-}
-section{
-    background:  linear-gradient(#012A60 100%, #012A60 25%, #012A60 75%, #012A60 100%);
+/* header{
+    position:fixed;
+    background: linear-gradient(#012A60 100%, #012A60 25%, #012A60 75%, #012A60 100%);
+    border-radius: 30px;
 } */
 .introduction{
     height: 86vh;
@@ -34,11 +22,11 @@ section{
     background-repeat: no-repeat;
     background-position:bottom;
 }
-.introduction .row{
+.introduction .row ,.title,.content  {
     background: #3067A5;
 }
 .row h1{
-    font-size: 5rem;
+    font-size: 4rem;
     text-shadow: 2px 2px 2px #000000;
 }
 .content h1,.introduction{
@@ -145,4 +133,3 @@ label{
     width: fit-content;
     height: fit-content;
 }
-

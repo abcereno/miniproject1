@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../assets/css/bootstrap.css">
     <script src="../assets/js/bootstrap.bundle.js"></script>
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="../assets/js/main.js"></script>
 </head>
 <body>
     <header id="home" class="container-fluid mb-4 header">
@@ -46,30 +48,37 @@
     <div class="container content">
         <div class="row">
             <div class="picture m-auto col-md-4 col-12 p-3">
-                <a href="#"><img data-bs-toggle="modal" data-bs-target="#exampleModal" class="mt-1 mb-1" id="addImg" src="../assets/imgs/upload.png" alt=""></a>
-                <input class="mt-1 mb-1" placeholder="Product Name" type="text">
-                <input class="mt-1 mb-1" placeholder="Stock Count" type="text">
+                <a href="#"><img class="mt-1 mb-1" id="addImg" src="../assets/imgs/upload.png" alt=""></a>
+                <input class="mt-1 mb-1" placeholder="Product Name" id="Pname" type="text">
+                <input class="mt-1 mb-1" placeholder="Stock Count" id="Scount" type="number">
             </div>
             <div class="col-md-8 col-12 p-3">
-                <input class="col-4 col-md-4 d-inline-block mt-1 mb-1" placeholder="Cost:" type="text"
-                ><input class="col-4 col-md-4 d-inline-block mt-1 mb-1" placeholder="Retail:" type="text"
-                ><input class="col-4 col-md-4 d-inline-block mt-1 mb-1" placeholder="Margin:" type="text">
-                <textarea class="w-100 p-2" placeholder="Enter Item Description..." name="" id="" cols="30" rows="10">
+                <input class="col-4 col-md-4 d-inline-block mt-1 mb-1" placeholder="Cost:" id="cost" type="number"
+                ><input class="col-4 col-md-4 d-inline-block mt-1 mb-1" placeholder="Retail:" id="retail" type="number"
+                ><input class="col-4 col-md-4 d-inline-block mt-1 mb-1" placeholder="Margin:" id="margin" type="number">
+                <textarea class="w-100 p-2" placeholder="Enter Item Description..." id="description" name="" id="" cols="30" rows="10">
                 </textarea>
-                <input class="col-md-4 col-12 d-inline-block mt-1 mb-1" placeholder="Date Purchased:" type="text"
-                ><input class="col-md-4 col-12 d-inline-block mt-1 mb-1" placeholder="Date Delivered:" type="text"
-                ><input class="col-md-4 col-12 d-inline-block mt-1 mb-1" placeholder="Supplier Name:" type="text">
+                <input class="col-md-4 col-12 d-inline-block mt-1 mb-1" placeholder="Date Ordered:" id="Dordered" type="date"
+                ><input class="col-md-4 col-12 d-inline-block mt-1 mb-1" placeholder="Date Delivered:" id="Ddelivered" type="date"
+                ><input class="col-md-4 col-12 d-inline-block mt-1 mb-1" placeholder="Supplier Name:" id="Sname" type="text">
+            </div>
+            <div class="row d-flex justify-content-evenly mt-4 p-3">
+                <button type="button" id="Iadd" class="btn btn-primary col-5 col-md-4 bg-success">Add</button>
+                <button type="button" id="Sclear" class="btn btn-primary col-5 col-md-4 bg-danger">Clear</button>
             </div>
             <div class="row">
-                <div class="col-12 col-md-6 m-auto mt-5 mb-5">
-                    <a href="#"><img data-bs-toggle="modal" data-bs-target="#exampleModal" class="picture" src="../assets/imgs/add.jpg" alt=""></a>
+                <div class="col-md-2">
+                    <input class="SSall" type="checkbox" name="" id="checkbox">Products:
+                    <ol class="p-0" id="Ilist">  
+                    </ol>
+                </div>
+                <div class="col-md-10" id="Idetails">
+                    <ol id="Ilistdetails">Item Details:
+                    </ol>
                 </div>
             </div>
         </div>
-        <div class="row d-flex justify-content-evenly mt-4 p-3">
-            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary col-5 col-md-4 bg-success">Save</button>
-            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary col-5 col-md-4 bg-danger">Delete</button>
-        </div>
+        <button type="button" id="Pdelete" class="btn btn-primary col-2 bg-danger deleteThis">Delete</button>
         <!-- ----------------- -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">

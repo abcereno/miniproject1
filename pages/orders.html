@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../assets/css/bootstrap.css">
     <script src="../assets/js/bootstrap.bundle.js"></script>
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="../assets/js/main.js"></script>
 </head>
 <body>
     <header id="home" class="container-fluid mb-4 header">
@@ -46,60 +48,35 @@
     <div class="container content p-sm-5 justify-content-center">
             <h2 class="row justify-content-center m-auto mb-4">Orders IN/OUT</h2>
             <div class="row d-flex justify-content-center justify-content-md-evenly align-items-center mt-1 mb-1">
-                <label class="col-3 col-md-1 mt-1 mb-1 d-flex align-items-center" for="name">Product:</label>
-                <input placeholder="Enter Product Name.." class="col-3 col-md-4 mt-1 mb-1 d-inline-block" type="text" name="" id="">
+                <label  class="col-3 col-md-1 mt-1 mb-1 d-flex align-items-center" for="name">Product:</label>
+                <input id="prodName" placeholder="Enter Product Name.." class="col-3 col-md-4 mt-1 mb-1 d-inline-block" type="text" name="" id="">
                 <label class="col-3 col-md-1 justify-content-center mt-1 mb-1 d-flex justify-content-center align-items-center" for="level">IN/OUT:</label>
-                <input placeholder="In or Out" class="col-3 mt-1 mb-1 d-inline-block" type="text" name="" id="">
+                <select id="inOut" placeholder="In or Out" class="col-1 mt-1 mb-1 d-inline-block" type="text" name="" id="">
+                    <option value=""></option>
+                    <option value="In">In</option>
+                    <option value="Out">Out</option>
+                </select>
                 <h6 class="d-flex align-items-center to">To</h6>
-                <input placeholder="Enter Customer Name" class="col-4" type="text">   
+                <input id="customerName" placeholder="Enter Customer Name" class="col-4" type="text">   
             </div>
             <br>
             <div class="row w-25 d-flex justify-content-center m-auto">
-                <button  type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary bg-success mt-1 mb-1">Add</button>
+                <button id="Oregister" type="button" class="btn btn-primary bg-success mt-1 mb-1">Add</button>
+            </div>
+            <div class="row d-flex justify-content-evenly">
+                <input class="SSall" type="checkbox" name="" id="checkbox">
+                <h4 class="col-3 p-0 d-flex justify-content-center">Product:</h4>
+                <h4 class="col-3 p-0 d-flex justify-content-center">IN/OUT:</h4>
+                <h4 class="col-3 p-0 d-flex justify-content-center">Name:</h4>
             </div>
             <div class="row">
-                <h4 class="col-4 d-flex justify-content-center">Product:</h4>
-                <h4 class="col-4 d-flex justify-content-center">IN/OUT:</h4>
-                <h4 class="col-4 d-flex justify-content-center">Name:</h4>
-            </div>
-            <div class="d-flex justify-content-evenly mt-1 mb-1">
-                <input type="checkbox" name="" id="checkbox">
-                <input class="col-4 w-25" type="text">
-                <input class="col-4 w-25" type="text">
-                <h6 class="d-flex align-items-center">To</h6>
-                <input class="col-4 w-25" type="text">
-            </div>
-            <div class="d-flex justify-content-evenly mt-1 mb-1">
-                <input type="checkbox" name="" id="checkbox">
-                <input class="col-4 w-25" type="text">
-                <input class="col-4 w-25" type="text">
-                <h6 class="d-flex align-items-center">To</h6>
-                <input class="col-4 w-25" type="text">
-            </div>
-            <div class="d-flex justify-content-evenly mt-1 mb-1">
-                <input type="checkbox" name="" id="checkbox">
-                <input class="col-4 w-25" type="text">
-                <input class="col-4 w-25" type="text">
-                <h6 class="d-flex align-items-center">To</h6>
-                <input class="col-4 w-25" type="text">
-            </div>
-            <div class="d-flex justify-content-evenly mt-1 mb-1">
-                <input type="checkbox" name="" id="checkbox">
-                <input class="col-4 w-25" type="text">
-                <input class="col-4 w-25" type="text">
-                <h6 class="d-flex align-items-center">To</h6>
-                <input class="col-4 w-25" type="text">
-            </div>
-            <div class="d-flex justify-content-evenly mt-1 mb-1">
-                <input type="checkbox" name="" id="checkbox">
-                <input class="col-4 w-25" type="text">
-                <input class="col-4 w-25" type="text">
-                <h6 class="d-flex align-items-center">To</h6>
-                <input class="col-4 w-25" type="text">
+                <ol id="Olist">
+                       
+                </ol>
             </div>
             <div class="row d-flex justify-content-evenly mt-4 mb-2">
                 <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary col-2 bg-success">Save</button>
-                <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary col-2 bg-danger">Delete</button>
+                <button type="button" class="Sdelete btn btn-primary col-2 bg-danger">Delete</button>
             </div>
             <!-- ----------------- -->
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
