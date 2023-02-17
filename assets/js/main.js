@@ -69,7 +69,7 @@ $(document).ready(function(){
                 <h6><b>Margin:</b> ${margin}</h6>
                 <h6><b>Description:</b><p> ${description}</p></h6>
                 <h6><b>Date Ordered:</b> ${Dordered}</h6>
-                <h6><b>Date Delivered:</b >${Ddelivered}</h6>
+                <h6><b>Date Delivered:</b> ${Ddelivered}</h6>
                 <h6><b>Supplier Name:</b> ${Sname}</h6>
             </div>
         </div>
