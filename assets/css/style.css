@@ -272,8 +272,23 @@ footer{
 .mhimg{
     background:#FAD550;
 }
-
-
+#checkbox{
+    width: fit-content;
+    height: fit-content;
+}
+div div .detailsImg{
+    width: 200px;
+    height: 200px;
+}
+#productDetails h6{
+    overflow-wrap: normal;
+    flex-wrap: wrap;
+}
+#productDetails{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
 
 

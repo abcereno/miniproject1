@@ -7,7 +7,7 @@ $(document).ready(function(){
         const staff = document.createElement("li")
         staff.innerHTML = (`
             <li>
-                <div class="row d-flex justify-content-evenly">
+                <div class="row d-flex justify-content-evenly align-items-center">
                     <input type="checkbox" name="" id="checkbox">
                     <h6 class="col-7 m-0 d-inline-block mt-1 mb-1 d-flex justify-content-center" id="">${Fname}</h6>
                     <h6 class="col-3 m-0 d-inline-block mt-1 mb-1 d-flex justify-content-center" id="">${Slevel}</h6>
@@ -18,35 +18,38 @@ $(document).ready(function(){
         $("#Fname").val("");
         $("#Slevel").val("");   
     });
-
     // for all delete button
     $(".Sdelete").click(function(){
         $("input[type='checkbox']:checked").each(function(){
             $(this).closest("li").remove();
         });
     });
-
     // for select all checkbox
     $(".SSall").on("click", function(){
         $("input[type='checkbox']").prop("checked", $(this).prop("checked"));
       });
-
-    // for add Product
+    // for computing margin up to 2 decimal places
+    $("#cost, #retail").keyup(function() {
+        let cost = parseFloat($("#cost").val());
+        let retail = parseFloat($("#retail").val());
+        let margin = retail - cost;
+        $("#margin").text("Php"+" "+margin.toFixed(2));
+    });
+    // for adding product
     $("#Iadd").click(function(){
         let Pname = $("#Pname").val();
         let Scount = $("#Scount").val();
         let cost = $("#cost").val();
         let retail = $("#retail").val();
-        let margin = $("#margin").val();
+        let margin = $("#margin").text();
         let description = $("#description").val();
         let Dordered = $("#Dordered").val();
         let Ddelivered = $("#Ddelivered").val();
         let Sname = $("#Sname").val();
-        const productId = `product-${Pname}`;
-    
+        const productId = `product-${Date.now()}`;
         const addProduct = document.createElement("li");
         addProduct.innerHTML = (`
-            <li class="row ps-3 pe-0 d-flex justify-content-evenly">
+            <li class="row ps-3 pe-0 d-flex justify-content-evenly align-items-center">
             <input class="col-1" type="checkbox" name="" id="checkbox">
                 <a class="col-9" href="#${productId}">${Pname}</a>
             </li> 
@@ -56,17 +59,19 @@ $(document).ready(function(){
         const addProductDetails = document.createElement("div");
         addProductDetails.id = productId;
         addProductDetails.innerHTML = (`
-        <div>
-            <img src="${imgSrc}" alt="Product Image"><br>
-            <h6><b>Product Name:</b> ${Pname}</h6>
-            <h6><b>Stock Count:</b> ${Scount}</h6>
-            <h6><b>Cost:</b> ${cost}</h6>
-            <h6><b>Retail:</b> ${retail}</h6>
-            <h6><b>Margin:</b> ${margin}</h6>
-            <h6><b>Description:</b> ${description}</h6>
-            <h6><b>Date Ordered:</b> ${Dordered}</h6>
-            <h6><b>Date Delivered:</b >${Ddelivered}</h6>
-            <h6><b>Supplier Name:</b> ${Sname}</h6>
+        <div id="productDetails">
+            <img class="detailsImg" src="${imgSrc}" alt="Product Image">
+            <div>
+                <h6><b>Product Name:</b> ${Pname}</h6>
+                <h6><b>Stock Count:</b> ${Scount}</h6>
+                <h6><b>Cost:</b> ${cost}</h6>
+                <h6><b>Retail:</b> ${retail}</h6>
+                <h6><b>Margin:</b> ${margin}</h6>
+                <h6><b>Description:</b><p> ${description}</p></h6>
+                <h6><b>Date Ordered:</b> ${Dordered}</h6>
+                <h6><b>Date Delivered:</b >${Ddelivered}</h6>
+                <h6><b>Supplier Name:</b> ${Sname}</h6>
+            </div>
         </div>
         `);
         $("#Ilistdetails").append(addProductDetails);
@@ -75,7 +80,7 @@ $(document).ready(function(){
         $("#Scount").val("");
         $("#cost").val("");
         $("#retail").val("");
-        $("#margin").val("");
+        $("#margin").text("");
         $("#description").val("");
         $("#Dordered").val("");
         $("#Ddelivered").val("");
@@ -111,7 +116,6 @@ $(document).ready(function(){
         $(targetId).remove();
         });
         });
-
     // for orders
     $("#Oregister").click(function(){
         let productName = $("#prodName").val();
@@ -120,7 +124,7 @@ $(document).ready(function(){
         const order = document.createElement("li")
         order.innerHTML = (`
         <li>
-            <div class="d-flex justify-content-evenly mt-1 mb-1">
+            <div class="d-flex justify-content-evenly align-items-center mt-1 mb-1">
                 <input type="checkbox" name="" id="checkbox">
                 <h6 class="col-4 w-25" type="text"> ${productName}</h6>
                 <h6 class="col-4 w-25" type="text"> ${inOut}</h6>
@@ -134,7 +138,6 @@ $(document).ready(function(){
         $("#inOut").val(""); 
         $("#customerName").val("");
     });
-
     // for adding suppliers
     $("#suppAdd").click(function(){
         let companyName = $("#companyName").val();
@@ -144,7 +147,7 @@ $(document).ready(function(){
         const supplier = document.createElement("li")
         supplier.innerHTML = (`
         <li>
-            <div class="row d-flex justify-content-evenly">
+            <div class="row d-flex justify-content-evenly align-items-center">
                 <input type="checkbox" name="" id="checkbox">
                 <h6 id="companyName" class="col-3 col-md-3 mt-1 mb-1" type="text"> ${companyName}</h6>
                 <h6 id="companyProduct" class="col-3 col-md-2 mt-1 mb-1" type="text"> ${companyProduct}</h6>
@@ -159,7 +162,4 @@ $(document).ready(function(){
         $("#companyProduct").val(""); 
         $("#avgDelivery").val("");
     });
-
-
-
 });

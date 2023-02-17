@@ -17,10 +17,10 @@
             <div class="col-lg col-md-12 d-flex justify-content-center align-items-center p-3">
                 <a href="home.html"><img class="logo lessradius" src="../assets/imgs/logo.png" alt=""></a>
             </div>
-            <div class="col-lg d-flex justify-content-center align-items-center">
+            <div class="col-lg d-flex justify-content-center align-items-center p-3">
                 <input class="lessradius hborder" placeholder="Search here...">
             </div>
-            <div class="col-lg d-flex justify-content-evenly align-items-center">
+            <div class="col-lg d-flex justify-content-evenly align-items-center p-3">
                 <ul class="m-0 p-0 d-inline-block">
                     <li>
                         <img class="" src="../assets/imgs/bell icon.png" alt="" id="userpic">
@@ -44,38 +44,6 @@
                     </li>
                 </ul>
             </div>
-<<<<<<< HEAD
-        </div>
-    </header>         
-    <div class="container-fluid content otherbg m-0 p-5">
-        <div class="row container justify-content-center background clipath m-auto">
-            <div class="content col-md-4 col-sm-12 p-0 overflow-auto p-0 mt-5 mb-5 pb-5">
-                <div>
-                <a href="#"><img id="addImg" src="../assets/imgs/product.png" alt=""></a>
-                </div>
-                <input class="mt-1 mb-1 lessradius" placeholder="Product Name" type="text">
-                <input class="mt-1 mb-1 lessradius" placeholder="Stock Count" type="text">
-            </div>
-            <div class="content col-md-7 col-sm-12 p-2 align-content-center mb-5 mt-5 p-0">
-                <input class="col-md-4 col-sm-12 d-inline-block mt-1 mb-1 lessradius" placeholder="Cost:" type="text"
-                ><input class="col-md-4 col-sm-12 d-inline-block mt-1 mb-1 lessradius" placeholder="Retail:" type="text"
-                ><input class="col-md-4 col-sm-12 d-inline-block mt-1 mb-1 lessradius" placeholder="Margin:" type="text">
-                <textarea class="form-control w-100 lessradius" placeholder="Item Description" id="floatingTextarea" cols="30" rows="10"></textarea>            </textarea>
-                <input class="col-md-4 col-sm-12 d-inline-block mt-1 mb-1 lessradius" placeholder="Date Purchased:" type="text"
-                ><input class="col-md-4 col-sm-12 d-inline-block mt-1 mb-1 lessradius" placeholder="Date Delivered:" type="text"
-                ><input class="col-md-4 col-sm-12 d-inline-block mt-1 mb-1 lessradius" placeholder="Supplier Name:" type="text">
-                <div class="row d-flex justify-content-evenly mt-4 mb-1 pb-5 pt-4">
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="content btn btn-primary col-2 save">Save</button>
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="content btn btn-primary col-2 delete">Delete</button>
-                </div>
-            </div>
-        </div>
-        <!-- <div class="row d-flex justify-content-evenly mt-4 mb-2"> 
-            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="content btn btn-primary col-2 save">Save</button>
-            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="content btn btn-primary col-2 delete">Delete</button>
-        </div>-->
-    </div>
-=======
         </div>       
     </header>
     <hr>
@@ -89,31 +57,36 @@
             <div class="col-md-8 col-12 p-3">
                 <input class="col-4 col-md-4 d-inline-block mt-1 mb-1" placeholder="Cost:" id="cost" type="number"
                 ><input class="col-4 col-md-4 d-inline-block mt-1 mb-1" placeholder="Retail:" id="retail" type="number"
-                ><input class="col-4 col-md-4 d-inline-block mt-1 mb-1" placeholder="Margin:" id="margin" type="number">
+                ><div class="col-4 col-md-4 d-inline-block mt-1 mb-1"><h5 class="d-inline-block">Margin:</h5><h6 class="d-inline-block" id="margin"></h6></div>
                 <textarea class="w-100 p-2" placeholder="Enter Item Description..." id="description" name="" id="" cols="30" rows="10">
                 </textarea>
                 <input class="col-md-4 col-12 d-inline-block mt-1 mb-1" placeholder="Date Ordered:" id="Dordered" type="date"
                 ><input class="col-md-4 col-12 d-inline-block mt-1 mb-1" placeholder="Date Delivered:" id="Ddelivered" type="date"
                 ><input class="col-md-4 col-12 d-inline-block mt-1 mb-1" placeholder="Supplier Name:" id="Sname" type="text">
             </div>
-            <div class="row d-flex justify-content-evenly mt-4 p-3">
+            <div class="col-12 d-flex justify-content-evenly mt-4 p-3">
                 <button type="button" id="Iadd" class="btn btn-primary col-5 col-md-4 bg-success">Add</button>
                 <button type="button" id="Sclear" class="btn btn-primary col-5 col-md-4 bg-danger">Clear</button>
             </div>
-            <div class="row">
-                <div class="col-md-2">
-                    <input class="SSall" type="checkbox" name="" id="checkbox">Products:
-                    <ol class="p-0" id="Ilist">  
-                    </ol>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <div class="d-flex justify-content-evenly align-items-center">
+                    <input class="SSall m-1 d-inline-block" type="checkbox" name="" id="checkbox"><h5 class="d-inline-block">Products:</h5>
                 </div>
-                <div class="col-md-10" id="Idetails">
-                    <ol id="Ilistdetails">Item Details:
+                <div>
+                    <ol class="p-0" id="Ilist">
                     </ol>
                 </div>
             </div>
+            <div class="col-md-10" id="Idetails"><h5 class="d-flex justify-content-center align-items-center col">Item Details:</h5>
+                <ol id="Ilistdetails">
+                </ol>
+            </div>
         </div>
-        <button type="button" id="Pdelete" class="btn btn-primary col-2 bg-danger deleteThis">Delete</button>
->>>>>>> ea8adb8cf57e87c238adcd68d4bdd19b23b5efc8
+        <div class="row d-flex justify-content-center align-items-center">
+            <button type="button" id="Pdelete" class="btn btn-primary col-4 col-sm-2 bg-danger deleteThis m-3">Delete</button>
+        </div>
         <!-- ----------------- -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -133,10 +106,10 @@
             </div>
           </div>
           <!-- ------------- -->
-          <!-- <footer class="container-fluid fixed-bottom mt-5 indexfbg"> 
+          <footer class="container-fluid indexfbg">
             <div class="p-2 row d-flex justify-content-center text-center text-white">
                 &copy; 2023 copyright | Terms and Conditions | Privacy policy
             </div>
-        </footer> -->
+        </footer>
 </body>
 </html>
