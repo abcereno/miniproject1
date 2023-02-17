@@ -49,20 +49,23 @@
     <hr>
     <div class="container content">
         <div class="row">
+            <h2 class="row justify-content-center mt-5 mb-5">Add Product</h2>
             <div class="picture m-auto col-md-4 col-12 p-3">
-                <a href="#"><img class="mt-1 mb-1" id="addImg" src="../assets/imgs/upload.png" alt=""></a>
-                <input class="mt-1 mb-1" placeholder="Product Name" id="Pname" type="text">
-                <input class="mt-1 mb-1" placeholder="Stock Count" id="Scount" type="number">
+                    <a href="#"><img id="addImg" src="../assets/imgs/upload.png" alt=""></a>
+                    <input class="mt-1 mb-1" placeholder="Product Name" id="Pname" type="text">
+                    <input class="mt-1 mb-1" placeholder="Stock Count" id="Scount" type="number">
             </div>
-            <div class="col-md-8 col-12 p-3">
-                <input class="col-4 col-md-4 d-inline-block mt-1 mb-1" placeholder="Cost:" id="cost" type="number"
-                ><input class="col-4 col-md-4 d-inline-block mt-1 mb-1" placeholder="Retail:" id="retail" type="number"
-                ><div class="col-4 col-md-4 d-inline-block mt-1 mb-1"><h5 class="d-inline-block">Margin:</h5><h6 class="d-inline-block" id="margin"></h6></div>
-                <textarea class="w-100 p-2" placeholder="Enter Item Description..." id="description" name="" id="" cols="30" rows="10">
-                </textarea>
-                <input class="col-md-4 col-12 d-inline-block mt-1 mb-1" placeholder="Date Ordered:" id="Dordered" type="date"
-                ><input class="col-md-4 col-12 d-inline-block mt-1 mb-1" placeholder="Date Delivered:" id="Ddelivered" type="date"
-                ><input class="col-md-4 col-12 d-inline-block mt-1 mb-1" placeholder="Supplier Name:" id="Sname" type="text">
+            <div class="col-md-8 col-12 p-3 d-flex align-items-center">
+                <div>
+                    <input class="col-4 col-md-4 d-inline-block mt-1 mb-1" placeholder="Cost:" id="cost" type="number"
+                    ><input class="col-4 col-md-4 d-inline-block mt-1 mb-1" placeholder="Retail:" id="retail" type="number"
+                    ><div class="col-4 col-md-4 d-inline-block mt-1 mb-1"><h5 class="d-inline-block">Margin:</h5><h6 class="d-inline-block" id="margin"></h6></div>
+                    <textarea class="w-100 p-2" placeholder="Enter Item Description..." id="description" name="" id="" cols="30" rows="10">
+                    </textarea>
+                    <input class="col-md-4 col-12 d-inline-block mt-1 mb-1" placeholder="Date Ordered:" id="Dordered" type="date"
+                    ><input class="col-md-4 col-12 d-inline-block mt-1 mb-1" placeholder="Date Delivered:" id="Ddelivered" type="date"
+                    ><input class="col-md-4 col-12 d-inline-block mt-1 mb-1" placeholder="Supplier Name:" id="Sname" type="text">
+                </div>
             </div>
             <div class="col-12 d-flex justify-content-evenly mt-4 p-3">
                 <button type="button" id="Iadd" class="btn btn-primary col-5 col-md-4 bg-success">Add</button>
@@ -70,8 +73,9 @@
             </div>
         </div>
         <div class="row">
+            <h2 class="row justify-content-center mt-5 mb-5">List of Products</h2>
             <div class="col-md-2">
-                <div class="d-flex justify-content-evenly align-items-center">
+                <div class="d-flex justify-content-center justify-content-md-evenly align-items-center mt-3">
                     <input class="SSall m-1 d-inline-block" type="checkbox" name="" id="checkbox"><h5 class="d-inline-block">Products:</h5>
                 </div>
                 <div>
