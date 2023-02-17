@@ -6,7 +6,9 @@
 html{
     scroll-behavior: smooth;
 }
-
+body{
+    overflow-x: hidden;
+}
 .logo{
     max-height:50px;
 }
@@ -288,6 +290,13 @@ div div .detailsImg{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+div ol li{
+    border: 1px solid black;
+    padding: 1rem;
+}
+#productDetails{
+    border: 1px solid black;
 }
 
 

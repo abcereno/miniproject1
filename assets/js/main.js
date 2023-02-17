@@ -4,15 +4,14 @@ $(document).ready(function(){
     $("#Sregister").click(function(){
         let Fname = $("#Fname").val();
         let Slevel = $("#Slevel").val();
-        const staff = document.createElement("li")
+        const staff = document.createElement("li");
+        staff.className = "mt-1 mb-1";
         staff.innerHTML = (`
-            <li>
                 <div class="row d-flex justify-content-evenly align-items-center">
                     <input type="checkbox" name="" id="checkbox">
                     <h6 class="col-7 m-0 d-inline-block mt-1 mb-1 d-flex justify-content-center" id="">${Fname}</h6>
                     <h6 class="col-3 m-0 d-inline-block mt-1 mb-1 d-flex justify-content-center" id="">${Slevel}</h6>
                 </div>
-            </li>
         `);
         $("div #Slist").append(staff);
         $("#Fname").val("");
@@ -48,11 +47,12 @@ $(document).ready(function(){
         let Sname = $("#Sname").val();
         const productId = `product-${Date.now()}`;
         const addProduct = document.createElement("li");
+        addProduct.className = "mt-1 mb-1";
         addProduct.innerHTML = (`
-            <li class="row ps-3 pe-0 d-flex justify-content-evenly align-items-center">
+            <div class="row ps-3 pe-0 d-flex justify-content-evenly align-items-center">
             <input class="col-1" type="checkbox" name="" id="checkbox">
                 <a class="col-9" href="#${productId}">${Pname}</a>
-            </li> 
+            </div> 
         `);
         $("div #Ilist").append(addProduct);
         const imgSrc = $("#addImg").attr("src");
@@ -121,17 +121,16 @@ $(document).ready(function(){
         let productName = $("#prodName").val();
         let inOut = $("#inOut").val();
         let customerName = $("#customerName").val();
-        const order = document.createElement("li")
+        const order = document.createElement("li");
+        order.className = "mt-1 mb-1";
         order.innerHTML = (`
-        <li>
-            <div class="d-flex justify-content-evenly align-items-center mt-1 mb-1">
+            <div class="d-flex justify-content-evenly align-items-center">
                 <input type="checkbox" name="" id="checkbox">
                 <h6 class="col-4 w-25" type="text"> ${productName}</h6>
                 <h6 class="col-4 w-25" type="text"> ${inOut}</h6>
                 <h6 class="d-flex align-items-center">To</h6>
                 <h6 class="col-4 w-25" type="text">${customerName}</h6>
             </div>
-        </li>
         `);
         $("div #Olist").append(order);
         $("#prodName").val("");
@@ -144,9 +143,9 @@ $(document).ready(function(){
         let companyProduct = $("#companyProduct").val();
         let pieces = $("#pieces").val();
         let avgDelivery = $("#avgDelivery").val();
-        const supplier = document.createElement("li")
+        const supplier = document.createElement("li");
+        supplier.className = "mt-1 mb-1";
         supplier.innerHTML = (`
-        <li>
             <div class="row d-flex justify-content-evenly align-items-center">
                 <input type="checkbox" name="" id="checkbox">
                 <h6 id="companyName" class="col-3 col-md-3 mt-1 mb-1" type="text"> ${companyName}</h6>
@@ -154,7 +153,6 @@ $(document).ready(function(){
                 <h6 id="pieces" class="col-2 col-md-1 mt-1 mb-1" type="text"> ${pieces}</h6>
                 <h6 id="avgDelivery" class="col-2 col-md-2 mt-1 mb-1" type="text"> ${avgDelivery}</h6>
             </div>
-        </li>
         `);
         $("div #suppList").append(supplier);
         $("#companyName").val("");
